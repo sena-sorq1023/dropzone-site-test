@@ -1,0 +1,52 @@
+name: 公開サイトを更新
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'   # 10分ごとに変更を確認（Supabaseの休止防止も兼ねる）
+  workflow_dispatch:          # Actions 画面から手動で実行
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  SUPABASE_URL: https://dvwwldoorumzdibygdnh.supabase.co
+  SUPABASE_KEY: sb_publishable_OqQSYL9fMfnSoq2sS1Q0zQ_nh_DXHyY
+  SITE_URL: https://dropzone-test.senastudio.jp
+  SITE_NOINDEX: '1'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 作り直しが必要か確認
+        id: check
+        env:
+          FORCE: ${{ github.event_name != 'schedule' }}
+        run: python check.py
+      - name: ページを生成
+        if: steps.check.outputs.build == 'true'
+        run: python build.py
+      - uses: actions/configure-pages@v5
+        if: steps.check.outputs.build == 'true'
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.check.outputs.build == 'true'
+        with:
+          path: _site
+      - id: deploy
+        if: steps.check.outputs.build == 'true'
+        uses: actions/deploy-pages@v4

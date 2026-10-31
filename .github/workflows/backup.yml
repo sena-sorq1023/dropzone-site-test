@@ -1,0 +1,47 @@
+name: データのバックアップ
+
+on:
+  schedule:
+    - cron: '30 18 * * *'    # 毎日 3:30（日本時間）
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  SUPABASE_URL: https://dvwwldoorumzdibygdnh.supabase.co
+  SUPABASE_KEY: sb_publishable_OqQSYL9fMfnSoq2sS1Q0zQ_nh_DXHyY
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 公開データをJSONで保存
+        run: |
+          python - <<'PY'
+          import json, os, sys
+          sys.path.insert(0, '.')
+          import build
+          data = {t: build.fetch(t) for t in build.TABLES}
+          os.makedirs('/tmp/backup', exist_ok=True)
+          for t, rows in data.items():
+              json.dump(rows, open(f'/tmp/backup/{t}.json', 'w'), ensure_ascii=False, indent=1, sort_keys=True)
+          print({t: len(r) for t, r in data.items()})
+          PY
+      - name: backups ブランチに保存
+        run: |
+          git config user.name "dropzone-backup"
+          git config user.email "actions@users.noreply.github.com"
+          git fetch origin backups || true
+          if git rev-parse --verify origin/backups >/dev/null 2>&1; then git checkout -B backups origin/backups; else git checkout --orphan backups; git rm -rf . >/dev/null 2>&1 || true; fi
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp /tmp/backup/*.json .
+          git add -A
+          git diff --cached --quiet && echo "no changes" || git commit -m "backup $(date -u +%Y-%m-%d)"
+          git push origin backups
