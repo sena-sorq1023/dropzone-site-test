@@ -217,3 +217,4 @@ tr.up td{background:#EAF5EE}
 @media (prefers-reduced-motion:no-preference){.hero-art img{animation:dz-drop 4.5s ease-in-out infinite}}
 @keyframes dz-drop{0%,100%{transform:translateY(-4px)}50%{transform:translateY(6px)}}
 @media (max-width:720px){.hero-in{padding:26px 22px}.hero-art{display:none}.pc{display:none}.logo img{height:36px}}
+.credit{margin-top:24px}

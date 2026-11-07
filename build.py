@@ -525,6 +525,10 @@ def build_tour(db, t):
         st = db.stand_of.get(s['id'])
         if st and st[0].get('rank') == 1:
             winners.append(f'{e(s["name"])}：{db.team_link(st[0].get("team_id"), st[0].get("team_name"))}')
+    src = ''
+    if t.get('liquipedia_url'):
+        src = (f'<p class="small mut credit">出典：<a href="{e(t["liquipedia_url"])}" target="_blank" rel="noopener">Liquipedia</a>'
+               f'（<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>）のデータをもとに作成</p>')
     logo = f'<img class="t-logo" src="{e(t["logo_url"])}" alt="">' if t.get('logo_url') else ''
     info = info_box('TOURNAMENT INFO', [
         ('シリーズ', e(t.get('series'))), ('主催', e(t.get('organizer'))), ('運営', e(t.get('operator'))), ('地域', e(t.get('region'))),
@@ -539,6 +543,7 @@ def build_tour(db, t):
             f'{f"<section>{h2('順位表')}<div class=tabs role=tablist>{'\n'.join(tabs)}</div>{'\n'.join(panels)}</section>" if stages else "<p class=mut>順位表はまだありません。</p>"}'
             f'{f"<section>{h2('出場チーム')}<ul class='card teams'>{teams_html}</ul></section>" if teams_html else ""}'
             f'{f"<section>{h2('配信アーカイブ')}<div class=btns>{streams_html}</div></section>" if streams_html else ""}'
+            f'{src}'
             f'</div><div class="col-side">{info}</div></div>')
     return page(f'/tournaments/{t["slug"]}/', t['name'], body, desc=plain(t.get('description')) or f'{t["name"]}の順位表・出場チーム・選手成績。', on='TOURNAMENTS', og_image=t.get('logo_url') or '')
 
