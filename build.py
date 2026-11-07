@@ -297,7 +297,7 @@ def page(path, title, body, *, desc='', on='', og_image='', ticker=''):
 <div class="ft-top"><a class="logo" href="/" aria-label="DROPZONE トップ"><img src="/assets/logo.webp" alt="DROPZONE" width="240" height="54" loading="lazy"></a>
 <nav aria-label="フッターメニュー">{"".join(f'<a href="{h}">{l}</a>' for l, h in NAV)}<a href="https://x.com/PUBGM_NewsNow" target="_blank" rel="noopener">X @PUBGM_NewsNow</a></nav></div>
 <p class="ft-note">※DROPZONEはファンが運営する非公式の情報サイトで、KRAFTON, Inc.とは関係ありません。</p>
-<p class="ft-copy">© 2026 KRAFTON, Inc. All Rights Reserved.<br>© 2026 DROPZONE</p>
+<p class="ft-copy">© 2026 DROPZONE. All Rights Reserved. | © 2026 SENA STUDIO.</p>
 </div></footer>
 <script src="/assets/site.js" defer></script>
 </body>
