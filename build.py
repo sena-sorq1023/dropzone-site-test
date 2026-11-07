@@ -257,7 +257,7 @@ def page(path, title, body, *, desc='', on='', og_image='', ticker=''):
     url = SITE + path
     nav = ''.join(f'<a href="{h}"{" class=\"on\" aria-current=\"page\"" if on == l else ""}>{l}</a>' for l, h in NAV)
     robots = '<meta name="robots" content="noindex, nofollow">' if NOINDEX else ''
-    og = f'<meta property="og:image" content="{e(og_image)}">' if og_image else f'<meta property="og:image" content="{SITE}/assets/ogp.png">'
+    og = f'<meta property="og:image" content="{e(og_image)}">' if og_image else f'<meta property="og:image" content="{SITE}/assets/ogp.jpg">'
     return f'''<!doctype html>
 <html lang="ja">
 <head>
@@ -275,16 +275,17 @@ def page(path, title, body, *, desc='', on='', og_image='', ticker=''):
 {og}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@PUBGM_NewsNow">
-<meta name="theme-color" content="#111318">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0E0F12">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@500;600;700&family=IBM+Plex+Mono:wght@500&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
 <a class="skip" href="#main">本文へスキップ</a>
 <header class="hd"><div class="wrap hd-in">
-<a class="logo" href="/" aria-label="DROPZONE トップ"><span class="logo-box" aria-hidden="true"></span>DROPZONE</a>
+<a class="logo" href="/" aria-label="DROPZONE トップ"><img src="/assets/logo.webp" alt="DROPZONE — ESPORTS COMMUNITY NEWS PORTAL" width="300" height="68"></a>
 <nav class="nav" aria-label="メインメニュー">{nav}</nav>
 <form class="search" role="search" action="/search/"><label for="q" class="sr">サイト内検索</label>
 <input id="q" name="q" type="search" placeholder="チーム・選手・大会を検索">
@@ -293,7 +294,7 @@ def page(path, title, body, *, desc='', on='', og_image='', ticker=''):
 {ticker}
 <main id="main" class="wrap main">{body}</main>
 <footer class="ft"><div class="wrap ft-in">
-<div class="ft-top"><a class="logo" href="/"><span class="logo-box" aria-hidden="true"></span>DROPZONE</a>
+<div class="ft-top"><a class="logo" href="/" aria-label="DROPZONE トップ"><img src="/assets/logo.webp" alt="DROPZONE" width="240" height="54" loading="lazy"></a>
 <nav aria-label="フッターメニュー">{"".join(f'<a href="{h}">{l}</a>' for l, h in NAV)}<a href="https://x.com/PUBGM_NewsNow" target="_blank" rel="noopener">X @PUBGM_NewsNow</a></nav></div>
 <p class="ft-note">※DROPZONEはファンが運営する非公式の情報サイトで、KRAFTON, Inc.とは関係ありません。</p>
 <p class="ft-copy">© 2026 KRAFTON, Inc. All Rights Reserved.<br>© 2026 DROPZONE</p>
@@ -434,7 +435,13 @@ def build_index(db):
     teams_html = ''.join(f'<a class="tg" href="/teams/{t["slug"]}/">{f"<img src={'"'}{e(t['logo_url'])}{'"'} alt={'"'}{'"'} loading=lazy>" if t.get("logo_url") else "<span class=tg-ph>" + e(t.get("tag") or t["name"][:2]) + "</span>"}<span>{e(t["name"])}</span></a>' for t in teams)
     if teams:
         side.append(f'<section>{h2("TEAMS", ("チーム一覧 →", "/teams/"))}<div class="tgrid">{teams_html}</div></section>')
-    body = f'{top}<div class="cols">{latest}<div class="col-side">{"".join(side)}</div></div>'
+    hero = ('<section class="hero" aria-label="DROPZONE"><div class="hero-in">'
+            '<div class="hero-txt"><p class="hero-kicker"><span aria-hidden="true"></span>INCOMING SUPPLY DROP</p>'
+            '<p class="hero-copy">大会も、移籍も、<br>ここに降ってくる。</p>'
+            '<p class="hero-sub">日本と世界の大会・チーム・選手・移籍情報をひとつに。<br class="pc">コミュニティ発のeスポーツニュースポータル。</p></div>'
+            '<div class="hero-art" aria-hidden="true"><span class="ring"></span><img src="/assets/crate.webp" alt="" width="280" height="338"></div>'
+            '</div></section>')
+    body = f'{hero}{top}<div class="cols">{latest}<div class="col-side">{"".join(side)}</div></div>'
     if not arts and not db.tours and not db.teams:
         body = '<section class="card pad"><h1 class="pt">DROPZONE</h1><p>まだデータがありません。編集サイトから記事や大会を追加すると、ここに表示されます。</p></section>'
     return page('/', '', body, ticker=ticker)
