@@ -21,6 +21,7 @@ env:
   SUPABASE_KEY: sb_publishable_OqQSYL9fMfnSoq2sS1Q0zQ_nh_DXHyY
   SITE_URL: https://dropzone.senastudio.jp
   SITE_NOINDEX: '1'
+  SITE_GATE: d76cdcbb2c1b2722bec821c53871a3b849f5e2cbec940faf26f95b08367fd381   # 仮公開中の簡易ログイン（ID:パスワードのSHA-256）。正式公開時はこの行を消す
 
 jobs:
   build:

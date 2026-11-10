@@ -23,6 +23,8 @@ URL = os.environ.get('SUPABASE_URL', '').rstrip('/')
 KEY = os.environ.get('SUPABASE_KEY', '')
 SITE = os.environ.get('SITE_URL', 'https://dropzone.senastudio.jp').rstrip('/')
 NOINDEX = os.environ.get('SITE_NOINDEX') == '1'
+# 仮公開中の簡易ログイン。SITE_GATE に「ID:パスワード」のSHA-256（16進）を入れると有効。空なら無効。
+GATE = os.environ.get('SITE_GATE', '').strip().lower()
 OUT = Path(os.environ.get('OUT_DIR', '_site'))
 HERE = Path(__file__).resolve().parent
 JST = timezone(timedelta(hours=9))
@@ -251,6 +253,28 @@ class DB:
 NAV = [('NEWS', '/news/'), ('TOURNAMENTS', '/tournaments/'), ('TEAMS', '/teams/'), ('PLAYERS', '/players/'), ('TRANSFERS', '/transfers/')]
 
 
+
+def gate_html():
+    if not GATE:
+        return ''
+    return ('''<style>html.gated body>*:not(#gate){display:none!important}
+#gate{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;background:#0E0F12;font-family:'Noto Sans JP',system-ui,sans-serif}
+#gate form{width:100%;max-width:360px;background:#fff;border-radius:6px;padding:28px;display:flex;flex-direction:column;gap:14px;border-top:4px solid #E5101C}
+#gate img{display:block;height:34px;width:auto;margin:0 auto 4px;background:#0E0F12;padding:8px 12px;border-radius:4px}
+#gate p{margin:0;font-size:13px;color:#5A5D6B;text-align:center}
+#gate label{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:700;color:#12131A}
+#gate input{min-height:42px;padding:8px 10px;border:1px solid #D9DBE1;border-radius:4px;font:inherit;font-size:16px}
+#gate button{min-height:44px;border:0;border-radius:4px;background:#E5101C;color:#fff;font:inherit;font-weight:700;cursor:pointer}
+#gate .ng{color:#B3261E;font-weight:700;min-height:1em}</style>
+<script>(function(){var H="''' + GATE + '''",K="dz_gate";try{if(localStorage.getItem(K)===H)return}catch(e){}
+document.documentElement.classList.add("gated");
+document.addEventListener("DOMContentLoaded",function(){var d=document.createElement("div");d.id="gate";
+d.innerHTML='<form><img src="/assets/logo.webp" alt="DROPZONE"><p>このサイトは準備中です。ログインしてください。</p><label>ID<input name="u" autocomplete="username" required></label><label>パスワード<input name="p" type="password" autocomplete="current-password" required></label><p class="ng" role="alert"></p><button type="submit">ログイン</button></form>';
+document.body.appendChild(d);var f=d.querySelector("form");f.u.focus();
+f.addEventListener("submit",function(ev){ev.preventDefault();var t=new TextEncoder().encode(f.u.value.trim()+":"+f.p.value);
+crypto.subtle.digest("SHA-256",t).then(function(b){var x=Array.from(new Uint8Array(b)).map(function(n){return n.toString(16).padStart(2,"0")}).join("");
+if(x===H){try{localStorage.setItem(K,H)}catch(e){}document.documentElement.classList.remove("gated");d.remove()}else{f.querySelector(".ng").textContent="IDまたはパスワードが違います";f.p.value="";f.p.focus()}})})})})();</script>''')
+
 def page(path, title, body, *, desc='', on='', og_image='', ticker=''):
     full_title = f'{title} | DROPZONE' if title else 'DROPZONE | 日本と世界のPUBG MOBILE eスポーツ情報'
     desc = desc or '日本と世界のPUBG MOBILE eスポーツの大会結果・チーム・選手・移籍情報をまとめるデータベース。'
@@ -266,6 +290,7 @@ def page(path, title, body, *, desc='', on='', og_image='', ticker=''):
 <title>{e(full_title)}</title>
 <meta name="description" content="{e(desc)}">
 {robots}
+{gate_html()}
 <link rel="canonical" href="{e(url)}">
 <meta property="og:type" content="{'article' if path.startswith('/news/') and path != '/news/' else 'website'}">
 <meta property="og:site_name" content="DROPZONE">
