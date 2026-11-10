@@ -1,0 +1,18 @@
+[
+ {
+  "created_at": "2026-11-10T16:09:46.562498+00:00",
+  "id": "17f38ef3-2f02-40fc-bdc4-2cbb9acf86df",
+  "maps": [
+   "RONDO",
+   "ERANGEL",
+   "MIRAMAR"
+  ],
+  "match_count": 3,
+  "name": "Ladder Day1",
+  "notes": null,
+  "schedule": "2026.09.04",
+  "sort_order": 1,
+  "tournament_id": "b3cf2dc3-597f-466f-97b1-b852890b92ab",
+  "updated_at": "2026-11-10T16:10:24.921128+00:00"
+ }
+]
