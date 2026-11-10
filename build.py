@@ -3,7 +3,7 @@
 
 環境変数:
   SUPABASE_URL, SUPABASE_KEY  … 公開用の URL と publishable key
-  SITE_URL                     … 例 https://dropzone-test.senastudio.jp
+  SITE_URL                     … 例 https://dropzone.senastudio.jp
   SITE_NOINDEX=1               … テスト環境は検索に載せない
   OUT_DIR                      … 出力先（既定 _site）
 """
@@ -21,7 +21,7 @@ from pathlib import Path
 
 URL = os.environ.get('SUPABASE_URL', '').rstrip('/')
 KEY = os.environ.get('SUPABASE_KEY', '')
-SITE = os.environ.get('SITE_URL', 'https://dropzone-test.senastudio.jp').rstrip('/')
+SITE = os.environ.get('SITE_URL', 'https://dropzone.senastudio.jp').rstrip('/')
 NOINDEX = os.environ.get('SITE_NOINDEX') == '1'
 OUT = Path(os.environ.get('OUT_DIR', '_site'))
 HERE = Path(__file__).resolve().parent

@@ -19,7 +19,7 @@ concurrency:
 env:
   SUPABASE_URL: https://dvwwldoorumzdibygdnh.supabase.co
   SUPABASE_KEY: sb_publishable_OqQSYL9fMfnSoq2sS1Q0zQ_nh_DXHyY
-  SITE_URL: https://dropzone-test.senastudio.jp
+  SITE_URL: https://dropzone.senastudio.jp
   SITE_NOINDEX: '1'
 
 jobs:

@@ -1,6 +1,6 @@
-# DROPZONE 公開サイト（テスト環境）
+# DROPZONE 公開サイト（仮公開：本番ドメイン dropzone-news.jp 取得までの仮ドメイン）
 
-https://dropzone-test.senastudio.jp
+https://dropzone.senastudio.jp
 
 - 中身は Supabase のデータから自動で作られます。直接このリポジトリを編集する必要はありません。
 - `build.yml` が10分ごとにデータの変更を確認し、変わっていればページを作り直して公開します。
