@@ -15,6 +15,7 @@ import shutil
 import sys
 import urllib.parse
 import urllib.request
+import urllib.error
 from collections import defaultdict
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -30,7 +31,8 @@ HERE = Path(__file__).resolve().parent
 JST = timezone(timedelta(hours=9))
 TODAY = datetime.now(JST).date()
 
-TABLES = ['teams', 'players', 'tournaments', 'tournament_stages', 'standings', 'player_stats', 'transfers', 'articles', 'site_state']
+TABLES = ['teams', 'players', 'tournaments', 'tournament_stages', 'standings', 'player_stats', 'transfers', 'articles', 'staff', 'site_state']
+OPTIONAL = {'staff'}  # まだ作っていなくても止まらないテーブル
 
 
 # ---------------------------------------------------------------------------
@@ -43,8 +45,13 @@ def fetch(table):
         if table == 'site_state':
             q = f'{URL}/rest/v1/site_state?select=*'
         req = urllib.request.Request(q, headers={'apikey': KEY, 'Accept': 'application/json'})
-        with urllib.request.urlopen(req, timeout=60) as r:
-            chunk = json.loads(r.read().decode('utf-8'))
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                chunk = json.loads(r.read().decode('utf-8'))
+        except urllib.error.HTTPError:
+            if table in OPTIONAL:
+                return []
+            raise
         rows += chunk
         if table == 'site_state' or len(chunk) < 1000:
             return rows
@@ -180,6 +187,8 @@ class DB:
         self.articles = sorted([a for a in raw['articles'] if ts(a.get('published_at')) <= now],
                                key=lambda r: ts(r['published_at']), reverse=True)
         self.state = (raw.get('site_state') or [{}])[0]
+        self.staff = sorted([r for r in raw.get('staff', []) if r.get('active', True)], key=lambda r: (r.get('sort_order') or 100, r['name'].lower()))
+        self.staff_by_name = {r['name'].strip().lower(): r for r in self.staff}
         self.team = {r['id']: r for r in self.teams}
         self.player = {r['id']: r for r in self.players}
         self.tour = {r['id']: r for r in self.tours}
@@ -320,7 +329,7 @@ def page(path, title, body, *, desc='', on='', og_image='', ticker=''):
 <main id="main" class="wrap main">{body}</main>
 <footer class="ft"><div class="wrap ft-in">
 <div class="ft-top"><a class="logo" href="/" aria-label="DROPZONE トップ"><img src="/assets/logo.webp" alt="DROPZONE" width="240" height="54" loading="lazy"></a>
-<nav aria-label="フッターメニュー">{"".join(f'<a href="{h}">{l}</a>' for l, h in NAV)}<a href="https://x.com/PUBGM_NewsNow" target="_blank" rel="noopener">X @PUBGM_NewsNow</a></nav></div>
+<nav aria-label="フッターメニュー">{"".join(f'<a href="{h}">{l}</a>' for l, h in NAV)}<a href="/staff/">編集部</a><a href="https://x.com/PUBGM_NewsNow" target="_blank" rel="noopener">X @PUBGM_NewsNow</a></nav></div>
 <p class="ft-note">※DROPZONEはファンが運営する非公式の情報サイトで、KRAFTON, Inc.とは関係ありません。</p>
 <p class="ft-copy">© 2026 DROPZONE. All Rights Reserved. | © 2026 SENA STUDIO.</p>
 </div></footer>
@@ -502,7 +511,7 @@ def build_article(db, a):
     if related:
         side.append(f'<aside class="card side-n"><span class="lab">NEWS</span>' + ''.join(f'<a class="blk" href="/news/{x["slug"]}/"><span class="mut small">{dt(x["published_at"])}</span>{e(x["title"])}</a>' for x in related) + '</aside>')
     body = (f'{crumb(("ニュース", "/news/"), (CAT_JA.get(a["category"], ""), None))}<div class="art-wrap"><article class="card art">'
-            f'<div class="meta">{badge(a["category"], True)}<span>{dt(a["published_at"])}</span><span>{"世界" if a.get("scope") == "world" else "日本"}</span>{f"<span>文：{e(a['author_name'])}</span>" if a.get("author_name") else ""}</div>'
+            f'<div class="meta">{badge(a["category"], True)}<span>{dt(a["published_at"])}</span><span>{"世界" if a.get("scope") == "world" else "日本"}</span>{author_span(db, a)}</div>'
             f'<h1>{e(a["title"])}</h1>{f"<p class=lead>{e(a['lead'])}</p>" if a.get("lead") else ""}{cover}<div class="prose">{md(a.get("body"))}</div>{res}'
             f'<p class="share"><a class="btn" href="{e(share)}" target="_blank" rel="noopener">Xでシェア</a></p></article><div class="art-side">{"".join(side)}</div></div>')
     return page(f'/news/{a["slug"]}/', a['title'], body, desc=a.get('lead') or plain(a.get('body')), on='NEWS', og_image=a.get('cover_url') or '')
@@ -593,6 +602,48 @@ def ordinal(n):
     if n is None:
         return '—'
     return f'{n}{"st" if n % 10 == 1 and n % 100 != 11 else "nd" if n % 10 == 2 and n % 100 != 12 else "rd" if n % 10 == 3 and n % 100 != 13 else "th"}'
+
+
+def author_span(db, a):
+    n = (a.get('author_name') or '').strip()
+    if not n:
+        return ''
+    st = db.staff_by_name.get(n.lower())
+    return f'<span>文：<a href="/staff/{st["slug"]}/">{e(n)}</a></span>' if st else f'<span>文：{e(n)}</span>'
+
+
+def staff_icon(r, cls='st-ic'):
+    if r.get('photo_url'):
+        return f'<img class="{cls}" src="{e(r["photo_url"])}" alt="" loading="lazy">'
+    return f'<span class="{cls} ph" aria-hidden="true">{e(r["name"][:1].upper())}</span>'
+
+
+def staff_arts(db, r):
+    n = r['name'].strip().lower()
+    return [a for a in db.articles if (a.get('author_name') or '').strip().lower() == n]
+
+
+def build_staff_list(db):
+    cards = ''.join(
+        f'<a class="card st-card" href="/staff/{r["slug"]}/">{staff_icon(r)}<span class="st-body">'
+        f'<span class="st-pos">{e(r.get("position"))}</span><span class="st-name">{e(r["name"])}</span>'
+        f'{f"<span class=st-focus>{e(r['focus'])}</span>" if r.get("focus") else ""}'
+        f'<span class="st-count">記事 {len(staff_arts(db, r))}本</span></span></a>' for r in db.staff)
+    body = (f'{crumb(("編集部", None))}<h1 class="pt">EDITORIAL TEAM</h1>'
+            f'<p class="lead-p">DROPZONEの記事や大会・移籍データは、PUBG MOBILEのeスポーツが好きな有志の編集部が作っています。</p>'
+            f'{f"<div class=st-grid>{cards}</div>" if cards else "<p class=mut>準備中です。</p>"}')
+    return page('/staff/', '編集部', body, desc='DROPZONEの記事やデータを作っている編集部メンバーの紹介。')
+
+
+def build_staff(db, r):
+    arts = staff_arts(db, r)
+    info = info_box('PROFILE', [('肩書', e(r.get('position'))), ('担当', e(r.get('focus'))), ('記事', f'{len(arts)}本'), ('リンク', links_html(r.get('links')))])
+    body = (f'{crumb(("編集部", "/staff/"), (r["name"], None))}<div class="phead">{staff_icon(r, "st-ic big")}<div><div class="meta"><span>{e(r.get("position"))}</span></div><h1>{e(r["name"])}</h1></div></div>'
+            f'<div class="two"><div class="col-main">'
+            f'{f"<section>{h2('自己紹介')}<div class='card pad'><p class=pre>{e(r['bio'])}</p></div></section>" if r.get("bio") else ""}'
+            f'<section>{h2("書いた記事")}{f"<div class='card list'>{news_rows(db, arts)}</div>" if arts else "<p class=mut>まだ記事はありません。</p>"}</section>'
+            f'</div><div class="col-side">{info}</div></div>')
+    return page(f'/staff/{r["slug"]}/', r['name'], body, desc=plain(r.get('bio')) or f'DROPZONE編集部 {r["name"]}のプロフィールと記事。', og_image=r.get('photo_url') or '')
 
 
 def build_team_list(db):
@@ -763,6 +814,9 @@ def main():
     for p in db.players:
         write(f'/players/{p["slug"]}/', build_player(db, p))
     write('/transfers/', build_transfers(db))
+    write('/staff/', build_staff_list(db))
+    for r in db.staff:
+        write(f'/staff/{r["slug"]}/', build_staff(db, r))
     write('/search/', build_search(db))
     (OUT / 'search.json').write_text(json.dumps(search_index(db), ensure_ascii=False), encoding='utf-8')
     (OUT / '404.html').write_text(page('/404.html', 'ページが見つかりません', '<section class="card pad"><h1 class="pt">404</h1><p>ページが見つかりませんでした。</p><p><a href="/">トップへ戻る</a></p></section>'), encoding='utf-8')

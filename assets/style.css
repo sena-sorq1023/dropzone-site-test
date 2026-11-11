@@ -218,3 +218,17 @@ tr.up td{background:#EAF5EE}
 @keyframes dz-drop{0%,100%{transform:translateY(-4px)}50%{transform:translateY(6px)}}
 @media (max-width:720px){.hero-in{padding:26px 22px}.hero-art{display:none}.pc{display:none}.logo img{height:36px}}
 .credit{margin-top:24px}
+
+/* 編集部 */
+.lead-p{margin:-6px 0 22px;color:var(--sub);max-width:720px}
+.st-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:12px}
+.st-card{display:flex;align-items:center;gap:16px;padding:18px;color:var(--ink);border-top:3px solid var(--acc)}
+.st-card:hover{text-decoration:none;border-color:var(--ink)}
+.st-ic{flex:none;width:72px;height:72px;border-radius:50%;object-fit:cover;background:var(--ink)}
+.st-ic.ph{display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--cond);font-weight:800;font-size:30px}
+.st-ic.big{width:104px;height:104px;font-size:42px}
+.st-body{display:flex;flex-direction:column;gap:2px;min-width:0}
+.st-pos{font-family:var(--cond);font-weight:700;font-size:13px;letter-spacing:.08em;color:var(--acc)}
+.st-name{font-size:19px;font-weight:900;line-height:1.35}
+.st-focus{font-size:13px;color:var(--sub)}
+.st-count{font-size:12px;color:var(--sub);margin-top:4px}
