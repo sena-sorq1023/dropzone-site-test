@@ -1,0 +1,18 @@
+[
+ {
+  "active": true,
+  "bio": "DROPZONEの前身であるPUBG MOBILE ESPORTS NEWSの立ち上げ人。\n現在はMAPLE ARMYでディレクターを務め、日本コミュニティの発展を目指す。",
+  "created_at": "2026-11-11T22:11:14.235295+00:00",
+  "focus": null,
+  "id": "76a75f6f-de4b-41ea-bbae-69e8a1e95bff",
+  "links": {
+   "x": "https://x.com/kozek1ngGG"
+  },
+  "name": "Kozeki",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/staff/2026-11/7f7ce597-7556-4378-8bdd-381ebd0d2cb9.webp",
+  "position": "編集長",
+  "slug": "kozeki",
+  "sort_order": 1,
+  "updated_at": "2026-11-11T22:16:32.132765+00:00"
+ }
+]
