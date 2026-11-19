@@ -103,7 +103,7 @@ CAT_JA = {'news': 'ニュース', 'tournament': '大会', 'result': '結果', 't
 TSTATUS = {'upcoming': '開催予定', 'ongoing': '開催中', 'completed': '終了'}
 TEAMST = {'active': '活動中', 'inactive': '休止中', 'disbanded': '解散'}
 KIND = {'join': '加入', 'leave': '脱退', 'loan': 'レンタル', 'retire': '引退', 'role': 'ロール変更'}
-LINK_NAMES = {'x': 'X', 'youtube': 'YouTube', 'twitch': 'Twitch', 'tiktok': 'TikTok', 'website': 'Webサイト'}
+LINK_NAMES = {'x': 'X', 'instagram': 'Instagram', 'youtube': 'YouTube', 'twitch': 'Twitch', 'tiktok': 'TikTok', 'website': 'Webサイト'}
 
 
 def md(src):
