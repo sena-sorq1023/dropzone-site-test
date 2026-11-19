@@ -1,1 +1,20 @@
-[]
+[
+ {
+  "bio": null,
+  "created_at": "2026-11-19T17:01:46.64241+00:00",
+  "full_ign": "MGLZ・N1RZED",
+  "id": "d9de3044-0f56-4527-b3e3-867c04b3f4f1",
+  "ign": "NIRZED",
+  "links": {
+   "instagram": "https://www.instagram.com/nirzed_98/?hl=ja",
+   "youtube": "https://www.youtube.com/@n1rzed634"
+  },
+  "nationality": "モンゴル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/42402490-d94a-496c-a036-1987f46386f7.webp",
+  "real_name": "Nurzed Bayarmunkh",
+  "role": null,
+  "slug": "nirzed",
+  "team_id": "fb8d0200-9a4e-470b-8ac7-8b5822a2b474",
+  "updated_at": "2026-11-19T17:02:12.270114+00:00"
+ }
+]

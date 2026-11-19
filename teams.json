@@ -1,1 +1,41 @@
-[]
+[
+ {
+  "achievements": [],
+  "created_at": "2026-11-19T17:53:03.22368+00:00",
+  "description": null,
+  "founded": "2025",
+  "id": "addbed54-cee8-433f-bb60-c89adea1c582",
+  "links": {
+   "instagram": "https://www.instagram.com/reignite_ent",
+   "x": "https://x.com/ReigniteJP",
+   "youtube": "https://www.youtube.com/channel/UCclJj-dtXX0-uIpFl3gGBHA"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/8476d402-c3ed-4fab-bc85-d8e16aa4f146.webp",
+  "manager": null,
+  "name": "REIGNITE",
+  "region": "日本",
+  "slug": "reignite",
+  "status": "active",
+  "tag": "RIG",
+  "updated_at": "2026-11-19T17:53:03.22368+00:00"
+ },
+ {
+  "achievements": [
+   "PUBG Mobile Global Open 2026 Season 2 EECA Finals - 優勝",
+   "PUBG Mobile Global Open 2026 Season 2 - 6位"
+  ],
+  "created_at": "2026-11-19T14:38:45.556742+00:00",
+  "description": null,
+  "founded": "2025",
+  "id": "fb8d0200-9a4e-470b-8ac7-8b5822a2b474",
+  "links": {},
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/2fcd897f-8b5c-42d8-8293-a748e2739f7e.webp",
+  "manager": null,
+  "name": "The MongolZ",
+  "region": "モンゴル",
+  "slug": "mglz",
+  "status": "active",
+  "tag": "MGLZ",
+  "updated_at": "2026-11-19T14:38:45.556742+00:00"
+ }
+]
