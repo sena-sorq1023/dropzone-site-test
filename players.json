@@ -1,6 +1,40 @@
 [
  {
   "bio": null,
+  "created_at": "2026-11-20T17:02:47.789453+00:00",
+  "full_ign": "MGLZ・ Raindrop",
+  "id": "6ae4d191-8770-4e02-9630-4e0e302737a4",
+  "ign": "Raindrop",
+  "links": {
+   "instagram": "https://www.instagram.com/raindropp.mglz"
+  },
+  "nationality": "モンゴル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/54b4beec-2a92-4fe7-8efc-d3f7711613da.webp",
+  "real_name": "Usukhbayar Amartuvshin",
+  "role": null,
+  "slug": "raindrop",
+  "team_id": "fb8d0200-9a4e-470b-8ac7-8b5822a2b474",
+  "updated_at": "2026-11-20T17:02:47.789453+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-20T17:01:58.892754+00:00",
+  "full_ign": "MGLZ・DeSSeRT",
+  "id": "8ecf45d4-4254-42c0-9e3a-691982ee9114",
+  "ign": "DeSSeRT",
+  "links": {
+   "instagram": "https://www.instagram.com/dessertmka"
+  },
+  "nationality": "モンゴル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/7792c1f0-946a-432b-9b2d-f51aa5ef2588.webp",
+  "real_name": "Temuulen Boldbayar",
+  "role": null,
+  "slug": "dessert",
+  "team_id": "fb8d0200-9a4e-470b-8ac7-8b5822a2b474",
+  "updated_at": "2026-11-20T17:01:58.892754+00:00"
+ },
+ {
+  "bio": null,
   "created_at": "2026-11-19T17:01:46.64241+00:00",
   "full_ign": "MGLZ・N1RZED",
   "id": "d9de3044-0f56-4527-b3e3-867c04b3f4f1",
@@ -16,5 +50,38 @@
   "slug": "nirzed",
   "team_id": "fb8d0200-9a4e-470b-8ac7-8b5822a2b474",
   "updated_at": "2026-11-19T17:02:12.270114+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-20T17:00:55.447807+00:00",
+  "full_ign": "MGLZ・JIRO",
+  "id": "e35b0cb8-88fb-4e06-84af-3b19e2458bc8",
+  "ign": "JIRO",
+  "links": {
+   "instagram": "https://www.instagram.com/jiropubgm_",
+   "youtube": "https://www.youtube.com/@jiroqqq"
+  },
+  "nationality": "モンゴル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/b29a31b1-f12d-4454-9072-ef9079f9b55a.webp",
+  "real_name": "Urtnasan Dorjdagva",
+  "role": "Fragger",
+  "slug": "jiro",
+  "team_id": "fb8d0200-9a4e-470b-8ac7-8b5822a2b474",
+  "updated_at": "2026-11-20T17:00:55.447807+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-20T17:03:44.249652+00:00",
+  "full_ign": "MGLZ・ NOAH",
+  "id": "e3d85381-cd91-48fc-ad98-142c35f7ab23",
+  "ign": "NOAH",
+  "links": {},
+  "nationality": "モンゴル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/5e86fa64-7c67-4bab-91d8-990f2ad35a0b.webp",
+  "real_name": "Munkhjin Sainsanaa",
+  "role": null,
+  "slug": "noah",
+  "team_id": "fb8d0200-9a4e-470b-8ac7-8b5822a2b474",
+  "updated_at": "2026-11-20T17:03:44.249652+00:00"
  }
 ]
