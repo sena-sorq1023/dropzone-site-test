@@ -674,7 +674,7 @@ def build_team(db, t):
     logo = f'<img class="t-logo" src="{e(t["logo_url"])}" alt="">' if t.get('logo_url') else f'<span class="t-logo ph">{e(t.get("tag") or "")}</span>'
     ach = t.get('achievements') or []
     info = info_box('TEAM INFO', [
-        ('地域', e(t.get('region'))), ('タグ', e(t.get('tag'))), ('設立', e(t.get('founded'))), ('マネージャー', e(t.get('manager'))),
+        ('地域', e(t.get('region'))), ('タグ', e(t.get('tag'))), ('設立', e(t.get('founded'))), ('マネージャー', e(t.get('manager'))), ('コーチ', e(t.get('coach'))),
         ('主な実績', '<br>'.join(e(a) for a in ach)), ('リンク', links_html(t.get('links'))),
     ])
     body = (f'{crumb(("チーム", "/teams/"), (t["name"], None))}<div class="phead">{logo}<div><div class="meta"><span>{e(t.get("region"))}</span>{f"<span class=chip>{e(t['tag'])}</span>" if t.get("tag") else ""}<span class="st st-{t.get("status")}">{TEAMST.get(t.get("status"), "")}</span></div><h1>{e(t["name"])}</h1></div></div>'
