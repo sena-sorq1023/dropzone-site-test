@@ -356,8 +356,32 @@
   "status": "completed",
   "streams": [],
   "team_count": "16",
+  "tier": "2",
+  "updated_at": "2026-11-21T17:05:59.802169+00:00"
+ },
+ {
+  "created_at": "2026-11-21T16:37:52.570183+00:00",
+  "description": null,
+  "end_date": "2026-12-13",
+  "format": "オフライン",
+  "id": "c2510685-02e6-4be7-9449-3cd9983b52b1",
+  "liquipedia_url": "https://liquipedia.net/pubgmobile/PUBG_Mobile_Global_Championship/2026",
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/tournaments/2026-11/d7e3d86b-696b-47fe-84a0-90a1d0b40ad0.webp",
+  "name": "PUBG Mobile Global Championship 2026",
+  "operator": "KRAFTON",
+  "organizer": "KRAFTON,Level Infinite",
+  "prize": "約4億7,000万円",
+  "region": "グローバル",
+  "scope": "world",
+  "series": "PMGC",
+  "short_name": "PMGC 2026",
+  "slug": "pmgc2026",
+  "start_date": "2026-11-26",
+  "status": "upcoming",
+  "streams": [],
+  "team_count": "39",
   "tier": "1",
-  "updated_at": "2026-11-10T16:08:29.625086+00:00"
+  "updated_at": "2026-11-21T16:37:52.570183+00:00"
  },
  {
   "created_at": "2026-11-10T15:55:17.600832+00:00",

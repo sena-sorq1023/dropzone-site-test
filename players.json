@@ -1,6 +1,199 @@
 [
  {
   "bio": null,
+  "created_at": "2026-11-21T18:12:19.430808+00:00",
+  "full_ign": "A7・Carrilho",
+  "id": "05b14920-96b2-47b2-bdab-622fb0f4f94e",
+  "ign": "Carrilho",
+  "links": {
+   "instagram": "https://www.instagram.com/a7carrilho"
+  },
+  "nationality": "ブラジル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/e89dc184-5c4a-41f4-8ec0-38c061cec298.webp",
+  "real_name": "Lucas Miguel da Silva Carrilho",
+  "role": "IGL",
+  "slug": "carrilho",
+  "team_id": "590ed617-b6bf-495f-9fa4-8dbe7dc679e3",
+  "updated_at": "2026-11-21T18:12:19.430808+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T17:47:58.663182+00:00",
+  "full_ign": "WOL・SLONIK",
+  "id": "17f824e1-dc5c-4782-83ad-303ff1a07747",
+  "ign": "SLONIK",
+  "links": {
+   "website": "https://telegram.me/Slon1k1488"
+  },
+  "nationality": "ウクライナ",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/9c644424-0ea6-4393-bca8-71d6a3104f77.webp",
+  "real_name": "Oleksii Totskyi",
+  "role": null,
+  "slug": "slonik",
+  "team_id": "815989b8-1c04-421c-b3af-1eab89003904",
+  "updated_at": "2026-11-21T17:48:07.07424+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T17:00:06.899146+00:00",
+  "full_ign": "Aurora・DOK",
+  "id": "1fbd2680-4fe0-4cc0-900b-192ea0794df3",
+  "ign": "DOK",
+  "links": {
+   "instagram": "https://www.instagram.com/dokpubgm_",
+   "youtube": "https://www.youtube.com/@Dok922."
+  },
+  "nationality": "モンゴル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/6bcfb7eb-2c38-4995-96f9-f0525d46e63e.webp",
+  "real_name": "Uuganbayar Dulguun",
+  "role": "IGL",
+  "slug": "dok",
+  "team_id": "aee82507-3eba-4575-9745-da493b4bc21d",
+  "updated_at": "2026-11-21T17:01:44.052533+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T16:43:35.370554+00:00",
+  "full_ign": "NS・TIZ1",
+  "id": "25a704fd-b383-4fe6-9df2-9c53651fa2d1",
+  "ign": "TIZ1",
+  "links": {
+   "instagram": "https://www.instagram.com/ns_tiz1",
+   "tiktok": "https://www.tiktok.com/@tiz1_4",
+   "youtube": "https://www.youtube.com/channel/UCY_7quVz-G8W52qnGCeq5Ag"
+  },
+  "nationality": "韓国",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/fce73532-acf7-493f-9012-9879e3e8ad96.webp",
+  "real_name": "Kim Dong-hyun",
+  "role": null,
+  "slug": "tiz1",
+  "team_id": "da3ac03d-bd36-4269-9f55-9a8a8f673a92",
+  "updated_at": "2026-11-21T16:43:35.370554+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T18:07:46.843394+00:00",
+  "full_ign": "A7・Lorranzin",
+  "id": "288349f7-e0d6-43e4-90c8-4b383b59d59f",
+  "ign": "Lorranzin",
+  "links": {
+   "instagram": "https://www.instagram.com/a7lorranzinn",
+   "youtube": "https://www.youtube.com/@lorranz1n"
+  },
+  "nationality": "ブラジル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/6c7ac8f5-3845-43c9-8375-ab5542f71e49.webp",
+  "real_name": "Lorran de Toledo Felesbino",
+  "role": "Assaulter",
+  "slug": "lorranzin",
+  "team_id": "590ed617-b6bf-495f-9fa4-8dbe7dc679e3",
+  "updated_at": "2026-11-21T18:07:46.843394+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T17:46:29.185886+00:00",
+  "full_ign": "WOL・Lmntrixxx",
+  "id": "2917bf89-e1fe-43ff-bfab-7c7acd8413cc",
+  "ign": "Lmntrixxx",
+  "links": {
+   "youtube": "https://www.youtube.com/@lmntrixxxxxxxxx"
+  },
+  "nationality": "ウクライナ",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/a40ff7e1-6fc7-46ae-bb9c-a16eb77b55ee.webp",
+  "real_name": "Daniil Zader",
+  "role": null,
+  "slug": "lmntrixxx",
+  "team_id": "815989b8-1c04-421c-b3af-1eab89003904",
+  "updated_at": "2026-11-21T17:46:29.185886+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T17:26:29.977501+00:00",
+  "full_ign": "Aurora・EAST",
+  "id": "559ce4de-588c-4628-809d-69c4d6d80401",
+  "ign": "EAST",
+  "links": {
+   "instagram": "https://www.instagram.com/eastpm_/",
+   "youtube": "https://www.youtube.com/@eastpubgm5451/videos"
+  },
+  "nationality": "モンゴル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/fb35e8a7-62ff-4c60-b04d-3fa699a50bec.webp",
+  "real_name": "Batmunkh Munkhbold",
+  "role": null,
+  "slug": "east",
+  "team_id": "aee82507-3eba-4575-9745-da493b4bc21d",
+  "updated_at": "2026-11-21T17:26:29.977501+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T17:24:57.666568+00:00",
+  "full_ign": "Aurora・Zyol",
+  "id": "5c60185c-1885-41b2-8590-17a00672e603",
+  "ign": "Zyol",
+  "links": {
+   "instagram": "https://www.instagram.com/zyoll.001/",
+   "youtube": "https://www.youtube.com/channel/UCe0qzF_uLClH9JRue3tLeMw"
+  },
+  "nationality": "モンゴル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/d9e53713-dae3-4a0d-ba96-a8f9ed2344a9.webp",
+  "real_name": "Zolboot Bayartsengel",
+  "role": null,
+  "slug": "zyol",
+  "team_id": "aee82507-3eba-4575-9745-da493b4bc21d",
+  "updated_at": "2026-11-21T17:24:57.666568+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T17:21:56.053434+00:00",
+  "full_ign": "Aurora・REFUS",
+  "id": "64fcf00b-6cdd-4dd4-b305-ea6d752b6b32",
+  "ign": "REFUS",
+  "links": {
+   "instagram": "https://www.instagram.com/refussss_/"
+  },
+  "nationality": "モンゴル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/a67536f5-a189-4293-9976-22572e9e4619.webp",
+  "real_name": "Amgalan Ankhbileg",
+  "role": null,
+  "slug": "refus",
+  "team_id": "aee82507-3eba-4575-9745-da493b4bc21d",
+  "updated_at": "2026-11-21T17:21:56.053434+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T17:52:49.092176+00:00",
+  "full_ign": "ULF・Soulless",
+  "id": "65bac541-01ba-4b54-a5c3-fd42a0154910",
+  "ign": "Soulless",
+  "links": {
+   "instagram": "https://www.instagram.com/soullesso7"
+  },
+  "nationality": "トルコ",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/2c1e6abc-e24f-4aed-adb9-a9fd298a0594.webp",
+  "real_name": "aha Avşar",
+  "role": null,
+  "slug": "soulless",
+  "team_id": "49178ae0-65ea-407b-9d95-84604faa6fb9",
+  "updated_at": "2026-11-21T17:52:49.092176+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T18:13:28.877311+00:00",
+  "full_ign": "A7・Nouthz",
+  "id": "689a2cae-26a9-4eb8-a9f7-7bf9bf36a074",
+  "ign": "Nouthz",
+  "links": {
+   "instagram": "https://www.instagram.com/a7nouthz"
+  },
+  "nationality": "ブラジル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/5ad216db-2cad-4362-928f-1f0a87f1bab2.webp",
+  "real_name": "Matheus Baptista De Souza",
+  "role": null,
+  "slug": "nouthz",
+  "team_id": "590ed617-b6bf-495f-9fa4-8dbe7dc679e3",
+  "updated_at": "2026-11-21T18:13:28.877311+00:00"
+ },
+ {
+  "bio": null,
   "created_at": "2026-11-20T17:02:47.789453+00:00",
   "full_ign": "MGLZ・ Raindrop",
   "id": "6ae4d191-8770-4e02-9630-4e0e302737a4",
@@ -15,6 +208,60 @@
   "slug": "raindrop",
   "team_id": "fb8d0200-9a4e-470b-8ac7-8b5822a2b474",
   "updated_at": "2026-11-20T17:02:47.789453+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T18:15:36.472646+00:00",
+  "full_ign": "A7・Guizao",
+  "id": "78ef4fe1-d61c-40ac-b4f8-7acd28c4aae0",
+  "ign": "Guizao",
+  "links": {
+   "instagram": "https://www.instagram.com/a7guizao/"
+  },
+  "nationality": "ブラジル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/8e211f5b-ce88-4c88-a3eb-0965b1758f61.webp",
+  "real_name": "Guilherme Costa Alves",
+  "role": null,
+  "slug": "guizao",
+  "team_id": "590ed617-b6bf-495f-9fa4-8dbe7dc679e3",
+  "updated_at": "2026-11-21T18:15:36.472646+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T17:44:45.017056+00:00",
+  "full_ign": "WOL・NCSSRY",
+  "id": "7fffc2cb-6dab-4c2d-99b5-2353871cccba",
+  "ign": "NCSSRY",
+  "links": {
+   "instagram": "https://www.instagram.com/ncssry21",
+   "youtube": "https://www.youtube.com/@ncssry"
+  },
+  "nationality": "ウクライナ",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/7d0c2966-e470-4aba-8ecd-c6cd6e1a640b.webp",
+  "real_name": "Maksym Vermiienko",
+  "role": null,
+  "slug": "ncssry",
+  "team_id": "815989b8-1c04-421c-b3af-1eab89003904",
+  "updated_at": "2026-11-21T17:44:45.017056+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T14:39:34.445115+00:00",
+  "full_ign": "NS・XZY",
+  "id": "8425ca48-a9b3-4f37-9e8b-4a4a3fc814c9",
+  "ign": "XZY",
+  "links": {
+   "instagram": "https://www.instagram.com/nsxzyc/",
+   "tiktok": "https://www.instagram.com/nsxzyc/",
+   "youtube": "https://www.youtube.com/channel/UCSMvAYzvlF0Rwo8Jbk0DWcg"
+  },
+  "nationality": "韓国",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/6fc8e0df-5239-4f54-913b-0ee5bebc6dcd.webp",
+  "real_name": "Kim Jun-ha",
+  "role": null,
+  "slug": "xzy",
+  "team_id": "da3ac03d-bd36-4269-9f55-9a8a8f673a92",
+  "updated_at": "2026-11-21T14:39:34.445115+00:00"
  },
  {
   "bio": null,
@@ -35,6 +282,132 @@
  },
  {
   "bio": null,
+  "created_at": "2026-11-21T17:23:39.634503+00:00",
+  "full_ign": "Aurora・TOP",
+  "id": "909596d9-63e0-4b55-b635-9e3320c95c4a",
+  "ign": "TOP",
+  "links": {
+   "instagram": "https://www.instagram.com/toppubgm__",
+   "youtube": "https://www.youtube.com/@toppubgm_/streams"
+  },
+  "nationality": "モンゴル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/50b0d58f-a44c-470d-ada3-847bfe5983b0.webp",
+  "real_name": "Burenbayar Altangerel",
+  "role": null,
+  "slug": "top",
+  "team_id": "aee82507-3eba-4575-9745-da493b4bc21d",
+  "updated_at": "2026-11-21T17:23:39.634503+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T17:55:42.052677+00:00",
+  "full_ign": "ULF・Kecth",
+  "id": "90e4e53a-ed35-4886-9ad9-9cb73b8451e6",
+  "ign": "Kecth",
+  "links": {
+   "instagram": "https://www.instagram.com/kecthpubg",
+   "youtube": "https://www.youtube.com/@kecth2704"
+  },
+  "nationality": "トルコ",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/d35c2d43-2c09-4d4d-8da0-be1e3665b083.webp",
+  "real_name": "Yiğit Meral",
+  "role": "IGL",
+  "slug": "kecth",
+  "team_id": "49178ae0-65ea-407b-9d95-84604faa6fb9",
+  "updated_at": "2026-11-21T17:55:42.052677+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T09:22:56.443356+00:00",
+  "full_ign": "FURIA・Ayala",
+  "id": "a0cbd99b-df7d-4f86-8246-149ef1655559",
+  "ign": "Ayala",
+  "links": {
+   "instagram": "https://www.instagram.com/ayalapubgm",
+   "x": "https://x.com/Ayalapubgm",
+   "youtube": "https://www.youtube.com/@AyalaPUBGM"
+  },
+  "nationality": "アルゼンチン",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/39f482e0-76dd-4fd8-9e40-baea0118cba2.webp",
+  "real_name": "Gonzalo Ayala",
+  "role": null,
+  "slug": "ayala",
+  "team_id": "d03b055f-aa1a-498a-9b63-1bbeb9eba3d8",
+  "updated_at": "2026-11-21T09:22:56.443356+00:00"
+ },
+ {
+  "bio": "Battlegrounds Mobile India International Cup 2025 - MVP",
+  "created_at": "2026-11-21T16:45:48.899927+00:00",
+  "full_ign": "NS・HYUNBIN",
+  "id": "a97d86ec-1e99-4d46-9f89-41d9d5b5dac5",
+  "ign": "HYUNBIN",
+  "links": {
+   "instagram": "https://www.instagram.com/ns_hyunbin/",
+   "youtube": "https://www.youtube.com/@jhb0818"
+  },
+  "nationality": "韓国",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/0efa15af-1c5a-471f-8446-1795f76906c4.webp",
+  "real_name": "Jeon Hyun-bin",
+  "role": null,
+  "slug": "hyunbin",
+  "team_id": "da3ac03d-bd36-4269-9f55-9a8a8f673a92",
+  "updated_at": "2026-11-21T17:02:21.628678+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T17:51:36.554344+00:00",
+  "full_ign": "ULF・Eren7",
+  "id": "afa692ba-c71c-40bf-ab27-38aa48e52330",
+  "ign": "Eren",
+  "links": {
+   "instagram": "https://www.instagram.com/ios.eren7"
+  },
+  "nationality": "トルコ",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/1af8af4a-a5b1-4dc1-a0de-c6a8b70ea609.webp",
+  "real_name": "Eren Gülenç",
+  "role": null,
+  "slug": "eren",
+  "team_id": "49178ae0-65ea-407b-9d95-84604faa6fb9",
+  "updated_at": "2026-11-21T17:52:58.187412+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T17:58:08.529855+00:00",
+  "full_ign": "ULF・Calse",
+  "id": "cce98539-fef4-4994-ac04-96fd4c1ea19c",
+  "ign": "Calse",
+  "links": {
+   "instagram": "https://www.instagram.com/calsetrr",
+   "x": "https://x.com/tahacalse",
+   "youtube": "https://www.youtube.com/channel/UC4DPUTECkLqADiYieGMOcQg"
+  },
+  "nationality": "トルコ",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/37f77239-88b5-48ec-841b-22379004d3d8.webp",
+  "real_name": "Zekeriya Taha Ünlü",
+  "role": null,
+  "slug": "calse",
+  "team_id": "49178ae0-65ea-407b-9d95-84604faa6fb9",
+  "updated_at": "2026-11-21T17:58:08.529855+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T17:54:04.677913+00:00",
+  "full_ign": "ULF・Scarface",
+  "id": "d851b188-ce66-41c2-b707-91c1488592b3",
+  "ign": "Scarface",
+  "links": {
+   "instagram": "https://www.instagram.com/scarfacepubgg"
+  },
+  "nationality": "トルコ",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/03010b45-a1cc-43d1-b53e-7cbc1c86a273.webp",
+  "real_name": "Civan Altay",
+  "role": null,
+  "slug": "scarface",
+  "team_id": "49178ae0-65ea-407b-9d95-84604faa6fb9",
+  "updated_at": "2026-11-21T17:54:04.677913+00:00"
+ },
+ {
+  "bio": null,
   "created_at": "2026-11-19T17:01:46.64241+00:00",
   "full_ign": "MGLZ・N1RZED",
   "id": "d9de3044-0f56-4527-b3e3-867c04b3f4f1",
@@ -50,6 +423,41 @@
   "slug": "nirzed",
   "team_id": "fb8d0200-9a4e-470b-8ac7-8b5822a2b474",
   "updated_at": "2026-11-19T17:02:12.270114+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T17:49:41.809852+00:00",
+  "full_ign": "WOL・Baton",
+  "id": "db3df789-2bc0-4147-9700-f9f8f9d0a8b8",
+  "ign": "Baton",
+  "links": {
+   "instagram": "https://www.instagram.com/batonnjjkk/"
+  },
+  "nationality": "ウクライナ",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/9358c98c-b8c9-425c-8739-f4d01425b6c1.webp",
+  "real_name": "Makariy Rosinskiy",
+  "role": null,
+  "slug": "baton",
+  "team_id": "815989b8-1c04-421c-b3af-1eab89003904",
+  "updated_at": "2026-11-21T17:49:41.809852+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T18:10:47.33764+00:00",
+  "full_ign": "A7・Revo",
+  "id": "e2e2e3ae-34a6-47ad-a227-41b01ad9476a",
+  "ign": "Revo",
+  "links": {
+   "instagram": "https://www.instagram.com/a7revo",
+   "youtube": "https://www.youtube.com/RevoFPS"
+  },
+  "nationality": "ブラジル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/c6cb89c5-9cd6-40ca-8d2c-acd4152d39cf.webp",
+  "real_name": "Roan Henrique Aléssio",
+  "role": "Assaulter",
+  "slug": "revo",
+  "team_id": "590ed617-b6bf-495f-9fa4-8dbe7dc679e3",
+  "updated_at": "2026-11-21T18:10:47.33764+00:00"
  },
  {
   "bio": null,
@@ -83,5 +491,22 @@
   "slug": "noah",
   "team_id": "fb8d0200-9a4e-470b-8ac7-8b5822a2b474",
   "updated_at": "2026-11-20T17:03:44.249652+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-21T16:47:15.580525+00:00",
+  "full_ign": "NS・SOEZ",
+  "id": "eebc1b57-5cfa-47df-9310-f093e105eb8f",
+  "ign": "SOEZ",
+  "links": {
+   "instagram": "https://www.instagram.com/ns_soez"
+  },
+  "nationality": "韓国",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/8232ea53-8f2e-459e-be8a-f715f06fd246.webp",
+  "real_name": "Song Ho-jin",
+  "role": "IGL",
+  "slug": "soez",
+  "team_id": "da3ac03d-bd36-4269-9f55-9a8a8f673a92",
+  "updated_at": "2026-11-21T16:47:15.580525+00:00"
  }
 ]

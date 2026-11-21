@@ -1,5 +1,50 @@
 [
  {
+  "achievements": [
+   "PUBG Mobile World Cup 2026 - 優勝",
+   "PUBG Mobile Global Open 2026 Season 2 Türkiye Finals - 優勝"
+  ],
+  "coach": "RipSevinnn",
+  "created_at": "2026-11-21T18:19:05.225162+00:00",
+  "description": null,
+  "founded": "2021",
+  "id": "1e6370e8-8ff8-4b28-b1dc-143e5760ef04",
+  "links": {
+   "instagram": "https://www.instagram.com/s2gespor",
+   "x": "https://x.com/s2gespor"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/726ec085-e6de-429b-b209-75f726cac837.webp",
+  "manager": null,
+  "name": "S2G Esports",
+  "region": "トルコ",
+  "slug": "s2g",
+  "status": "active",
+  "tag": "S2G",
+  "updated_at": "2026-11-21T18:19:05.225162+00:00"
+ },
+ {
+  "achievements": [
+   "PUBG Mobile Global Open 2026 Season 1 MENA Finals - 優勝"
+  ],
+  "coach": "Kent",
+  "created_at": "2026-11-21T17:40:05.839278+00:00",
+  "description": null,
+  "founded": "2026",
+  "id": "33308d41-1fff-44f6-b63c-5f34f0c1f298",
+  "links": {
+   "instagram": "https://www.instagram.com/alulapubgm",
+   "x": "https://x.com/AlUlaclub"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/b26e65a1-f98b-49ee-b357-788578de5e7a.webp",
+  "manager": "Q10",
+  "name": "AlUla Club Esports",
+  "region": "サウジアラビア",
+  "slug": "alula",
+  "status": "active",
+  "tag": "Ula",
+  "updated_at": "2026-11-21T17:40:05.839278+00:00"
+ },
+ {
   "achievements": [],
   "coach": "For1st",
   "created_at": "2026-11-20T17:12:39.250857+00:00",
@@ -10,14 +55,80 @@
    "instagram": "https://www.instagram.com/ulfesports",
    "youtube": "https://www.youtube.com/@ulfesports/videos"
   },
-  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/f2575f98-c3ae-4877-bb87-42692285aa5f.webp",
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/66a854e7-a33c-41d8-b09b-2f3443453b90.webp",
   "manager": null,
   "name": "ULF Esports",
   "region": "トルコ",
   "slug": "ulf",
   "status": "active",
   "tag": "ULF",
-  "updated_at": "2026-11-20T17:12:39.250857+00:00"
+  "updated_at": "2026-11-21T14:26:37.599733+00:00"
+ },
+ {
+  "achievements": [
+   "PUBG Mobile World Cup 2024 - 優勝",
+   "PUBG Mobile Global Championship 2025 - 優勝"
+  ],
+  "coach": "Nice",
+  "created_at": "2026-11-21T18:04:37.673602+00:00",
+  "description": null,
+  "founded": "2020",
+  "id": "590ed617-b6bf-495f-9fa4-8dbe7dc679e3",
+  "links": {
+   "instagram": "https://www.instagram.com/alpha7gg",
+   "x": "https://x.com/Alpha7_esports"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/18d9eb05-5881-4504-a639-be66cd708351.webp",
+  "manager": null,
+  "name": "Alpha7 Esports",
+  "region": "ブラジル",
+  "slug": "a7",
+  "status": "active",
+  "tag": "A7",
+  "updated_at": "2026-11-21T18:04:37.673602+00:00"
+ },
+ {
+  "achievements": [],
+  "coach": "Vintorez",
+  "created_at": "2026-11-21T14:32:51.416227+00:00",
+  "description": null,
+  "founded": "2019",
+  "id": "7b16ce14-089d-432f-9e74-468a4ea05728",
+  "links": {
+   "instagram": "https://www.instagram.com/sharperesports_official/",
+   "tiktok": "https://www.instagram.com/sharperesports_official/",
+   "website": "https://www.sharperesport.com/"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/01b7282e-1ac3-4db8-8601-46faacb1b199.webp",
+  "manager": null,
+  "name": "Sharper Esports",
+  "region": "タイ",
+  "slug": "sp",
+  "status": "active",
+  "tag": "SP",
+  "updated_at": "2026-11-21T17:41:03.249579+00:00"
+ },
+ {
+  "achievements": [
+   "PUBG Mobile Global Open 2026 Season 2 - 優勝"
+  ],
+  "coach": "Sai1",
+  "created_at": "2026-11-21T17:32:19.459358+00:00",
+  "description": null,
+  "founded": "2022",
+  "id": "815989b8-1c04-421c-b3af-1eab89003904",
+  "links": {
+   "instagram": "https://www.instagram.com/wolvesesports",
+   "x": "https://x.com/WolvesEsports"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/f2e1af9b-413a-4b88-8fe2-aac82b8f6954.webp",
+  "manager": null,
+  "name": "Wolves Esports",
+  "region": "アメリカ",
+  "slug": "wolves",
+  "status": "active",
+  "tag": "WOL",
+  "updated_at": "2026-11-21T17:41:13.790733+00:00"
  },
  {
   "achievements": [],
@@ -39,6 +150,51 @@
   "status": "active",
   "tag": "RIG",
   "updated_at": "2026-11-19T17:53:03.22368+00:00"
+ },
+ {
+  "achievements": [
+   "PUBG Mobile Global Open 2026 Season 1 EECA Finals - 優勝",
+   "PUBG Mobile World Cup 2026 - 3位"
+  ],
+  "coach": "Archer",
+  "created_at": "2026-11-21T16:53:23.591501+00:00",
+  "description": null,
+  "founded": "2026",
+  "id": "aee82507-3eba-4575-9745-da493b4bc21d",
+  "links": {
+   "instagram": "https://www.instagram.com/auroragg.mobile",
+   "website": "https://auroragg.com/en",
+   "x": "https://x.com/AuroraGaming_GG"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/238be926-e71a-4b77-8f3d-80cdcfefc857.webp",
+  "manager": "Reince",
+  "name": "Aurora Gaming",
+  "region": "モンゴル",
+  "slug": "aurora",
+  "status": "active",
+  "tag": "Aurora",
+  "updated_at": "2026-11-21T17:59:22.750315+00:00"
+ },
+ {
+  "achievements": [],
+  "coach": null,
+  "created_at": "2026-11-21T09:18:26.468714+00:00",
+  "description": null,
+  "founded": "2024",
+  "id": "d03b055f-aa1a-498a-9b63-1bbeb9eba3d8",
+  "links": {
+   "instagram": "https://www.instagram.com/furiagg",
+   "x": "https://x.com/furia",
+   "youtube": "https://www.youtube.com/channel/UCE4elIT7DqDv545IA71feHg"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/f980f43d-b66b-4b8d-a6d9-82d5048ea973.webp",
+  "manager": null,
+  "name": "FURIA",
+  "region": "ブラジル",
+  "slug": "furia",
+  "status": "active",
+  "tag": "FURIA",
+  "updated_at": "2026-11-21T09:18:26.468714+00:00"
  },
  {
   "achievements": [],
@@ -81,6 +237,25 @@
   "updated_at": "2026-11-20T17:07:16.650124+00:00"
  },
  {
+  "achievements": [],
+  "coach": "HidanS",
+  "created_at": "2026-11-21T14:29:32.002204+00:00",
+  "description": null,
+  "founded": "2026",
+  "id": "f22e3816-4fe2-48a3-b3cf-0954c02dd72e",
+  "links": {
+   "instagram": "https://www.instagram.com/akgoldesports"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/659e412e-c6c3-4945-b58f-b2dd76d867a4.webp",
+  "manager": null,
+  "name": "AK Gold Esports",
+  "region": "インドネシア",
+  "slug": "akg",
+  "status": "active",
+  "tag": "AKG",
+  "updated_at": "2026-11-21T14:29:32.002204+00:00"
+ },
+ {
   "achievements": [
    "PUBG Mobile Global Open 2026 Season 2 EECA Finals - 優勝",
    "PUBG Mobile Global Open 2026 Season 2 - 6位"
@@ -101,5 +276,26 @@
   "status": "active",
   "tag": "MGLZ",
   "updated_at": "2026-11-20T17:04:39.689502+00:00"
+ },
+ {
+  "achievements": [
+   "Peacekeeper Elite League Spring 2026 - 優勝"
+  ],
+  "coach": "NuBi",
+  "created_at": "2026-11-21T17:35:48.903827+00:00",
+  "description": null,
+  "founded": null,
+  "id": "feaa6e70-c426-4a98-90dc-6bd03c786820",
+  "links": {
+   "website": "https://weibo.com/u/6637426679"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/4e3202f0-2012-4247-b9ff-2adfa7290648.webp",
+  "manager": null,
+  "name": "All Gamers",
+  "region": "中国",
+  "slug": "ag",
+  "status": "active",
+  "tag": "AG",
+  "updated_at": "2026-11-21T17:40:53.359447+00:00"
  }
 ]
