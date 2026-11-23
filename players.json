@@ -35,6 +35,40 @@
  },
  {
   "bio": null,
+  "created_at": "2026-11-23T15:29:06.356904+00:00",
+  "full_ign": "ROW・Magrelin",
+  "id": "1a465b54-077b-4ed1-8f5c-cd580cea9817",
+  "ign": "Magrelin",
+  "links": {
+   "instagram": "https://www.instagram.com/magreliin_/"
+  },
+  "nationality": "ブラジル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/934e1874-9633-412f-8e84-8409678e696e.webp",
+  "real_name": "Jean Carlos Gomes Filho",
+  "role": "Fragger",
+  "slug": "magrelin",
+  "team_id": "eb821802-77a1-4049-a172-fa4a3280756c",
+  "updated_at": "2026-11-23T15:29:06.356904+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-23T15:37:12.360026+00:00",
+  "full_ign": "FURIA・Higorzd",
+  "id": "1d8427a1-d70e-4a8c-bcbb-3d3ad8740360",
+  "ign": "Higor",
+  "links": {
+   "instagram": "https://www.instagram.com/higorzd_/"
+  },
+  "nationality": "ブラジル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/444be063-2252-49f3-9385-cf6ab2f1bd6f.webp",
+  "real_name": "Higor Melo Germendorff",
+  "role": null,
+  "slug": "higor",
+  "team_id": "d03b055f-aa1a-498a-9b63-1bbeb9eba3d8",
+  "updated_at": "2026-11-23T15:37:12.360026+00:00"
+ },
+ {
+  "bio": null,
   "created_at": "2026-11-21T17:00:06.899146+00:00",
   "full_ign": "Aurora・DOK",
   "id": "1fbd2680-4fe0-4cc0-900b-192ea0794df3",
@@ -125,6 +159,23 @@
  },
  {
   "bio": null,
+  "created_at": "2026-11-23T15:31:20.263068+00:00",
+  "full_ign": "ROW・Mythic",
+  "id": "585b9c9a-142e-4739-ab7c-a0df75f8d26d",
+  "ign": "Mythic",
+  "links": {
+   "instagram": "https://www.instagram.com/mythicpubgm"
+  },
+  "nationality": "ブラジル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/9b88af9b-4492-45eb-92f8-e10afc10f6fd.webp",
+  "real_name": "Matheus Moitinho Arantes",
+  "role": null,
+  "slug": "mythic",
+  "team_id": "eb821802-77a1-4049-a172-fa4a3280756c",
+  "updated_at": "2026-11-23T15:31:20.263068+00:00"
+ },
+ {
+  "bio": null,
   "created_at": "2026-11-21T17:24:57.666568+00:00",
   "full_ign": "Aurora・Zyol",
   "id": "5c60185c-1885-41b2-8590-17a00672e603",
@@ -157,6 +208,23 @@
   "slug": "refus",
   "team_id": "aee82507-3eba-4575-9745-da493b4bc21d",
   "updated_at": "2026-11-21T17:21:56.053434+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-23T15:39:05.225483+00:00",
+  "full_ign": "FURIA・Silence",
+  "id": "650eaffe-039a-436b-9d9c-bbe5273e7770",
+  "ign": "Silence",
+  "links": {
+   "instagram": "https://www.instagram.com/silencepubgm1/"
+  },
+  "nationality": "ブラジル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/69bd0c96-1331-4c15-a145-93f155058b97.webp",
+  "real_name": "Kauã Rodrigues Lopes",
+  "role": null,
+  "slug": "silence",
+  "team_id": "d03b055f-aa1a-498a-9b63-1bbeb9eba3d8",
+  "updated_at": "2026-11-23T15:39:05.225483+00:00"
  },
  {
   "bio": null,
@@ -208,6 +276,23 @@
   "slug": "raindrop",
   "team_id": "fb8d0200-9a4e-470b-8ac7-8b5822a2b474",
   "updated_at": "2026-11-20T17:02:47.789453+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-23T15:31:51.419883+00:00",
+  "full_ign": "FURIA・Chieff",
+  "id": "6cff4429-1279-4db3-8a09-37968ef76671",
+  "ign": "Chieff",
+  "links": {
+   "instagram": "https://www.instagram.com/chieffpubgm"
+  },
+  "nationality": "ブラジル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/9e062cc1-e9db-49f9-99fc-ef5e5464175d.webp",
+  "real_name": "Anderson Rocha Nunes",
+  "role": null,
+  "slug": "chieff",
+  "team_id": "d03b055f-aa1a-498a-9b63-1bbeb9eba3d8",
+  "updated_at": "2026-11-23T15:33:08.915773+00:00"
  },
  {
   "bio": null,
@@ -508,5 +593,22 @@
   "slug": "soez",
   "team_id": "da3ac03d-bd36-4269-9f55-9a8a8f673a92",
   "updated_at": "2026-11-21T16:47:15.580525+00:00"
+ },
+ {
+  "bio": null,
+  "created_at": "2026-11-23T15:27:18.733634+00:00",
+  "full_ign": "ROW・Brunozin",
+  "id": "f25680a5-c409-452a-977f-3d0fb759b4f1",
+  "ign": "Bruno",
+  "links": {
+   "instagram": "https://www.instagram.com/ibrunozin"
+  },
+  "nationality": "ブラジル",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/players/2026-11/24a1e77a-bf10-438b-bf87-075f0d470d1c.webp",
+  "real_name": "Bruno Massadi",
+  "role": "IGL",
+  "slug": "bruno",
+  "team_id": "eb821802-77a1-4049-a172-fa4a3280756c",
+  "updated_at": "2026-11-23T15:29:13.332288+00:00"
  }
 ]

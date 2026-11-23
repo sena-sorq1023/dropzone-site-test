@@ -78,14 +78,14 @@
    "instagram": "https://www.instagram.com/alpha7gg",
    "x": "https://x.com/Alpha7_esports"
   },
-  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/18d9eb05-5881-4504-a639-be66cd708351.webp",
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/d1b62c9d-b7ff-48c4-9f27-1f90f4adccec.webp",
   "manager": null,
   "name": "Alpha7 Esports",
   "region": "ブラジル",
   "slug": "a7",
   "status": "active",
   "tag": "A7",
-  "updated_at": "2026-11-21T18:04:37.673602+00:00"
+  "updated_at": "2026-11-23T15:19:21.160253+00:00"
  },
  {
   "achievements": [],
@@ -107,6 +107,25 @@
   "status": "active",
   "tag": "SP",
   "updated_at": "2026-11-21T17:41:03.249579+00:00"
+ },
+ {
+  "achievements": [],
+  "coach": null,
+  "created_at": "2026-11-23T15:46:39.597511+00:00",
+  "description": null,
+  "founded": "2022",
+  "id": "7bbd4cba-a07b-43df-afcf-af524bbb87ff",
+  "links": {
+   "instagram": "https://www.instagram.com/teamgoat_pubgm"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/7f03b60e-668b-48ad-82af-fc43efff986b.webp",
+  "manager": null,
+  "name": "GOAT Team",
+  "region": "ロシア",
+  "slug": "goat",
+  "status": "active",
+  "tag": "GOAT",
+  "updated_at": "2026-11-23T15:46:39.597511+00:00"
  },
  {
   "achievements": [
@@ -154,6 +173,44 @@
  {
   "achievements": [],
   "coach": null,
+  "created_at": "2026-11-23T15:44:56.003596+00:00",
+  "description": null,
+  "founded": "2025",
+  "id": "994456e5-3566-4248-a908-b92bb31e1c75",
+  "links": {
+   "instagram": "https://www.instagram.com/xforce.rjc"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/6750628d-d39e-441a-9a24-549b78e984f9.webp",
+  "manager": null,
+  "name": "XForce Rejects",
+  "region": "南アフリカ",
+  "slug": "rjc",
+  "status": "active",
+  "tag": "RJC",
+  "updated_at": "2026-11-23T15:44:56.003596+00:00"
+ },
+ {
+  "achievements": [],
+  "coach": null,
+  "created_at": "2026-11-23T15:21:08.220331+00:00",
+  "description": null,
+  "founded": "2020",
+  "id": "9dc8371c-5996-474a-a077-34b1ba964225",
+  "links": {
+   "instagram": "https://www.instagram.com/4kesportss"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/7e91c546-e01f-456f-ac56-f1d0485baf52.webp",
+  "manager": null,
+  "name": "4K Esports",
+  "region": "イラク",
+  "slug": "4k",
+  "status": "active",
+  "tag": "4K",
+  "updated_at": "2026-11-23T15:22:13.078865+00:00"
+ },
+ {
+  "achievements": [],
+  "coach": null,
   "created_at": "2026-11-19T17:53:03.22368+00:00",
   "description": null,
   "founded": "2025",
@@ -195,6 +252,45 @@
   "status": "active",
   "tag": "Aurora",
   "updated_at": "2026-11-21T17:59:22.750315+00:00"
+ },
+ {
+  "achievements": [],
+  "coach": "Shaheen",
+  "created_at": "2026-11-23T15:48:13.312844+00:00",
+  "description": null,
+  "founded": "2024",
+  "id": "b606f6fc-9a0a-4e9c-8ca2-58e5d916ac4f",
+  "links": {
+   "instagram": "https://www.instagram.com/4thrives",
+   "x": "https://x.com/4thrives"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/8bda896c-adef-4e95-a5f9-6778dd7b8a6d.webp",
+  "manager": null,
+  "name": "4Thrives Esports",
+  "region": "パキスタン",
+  "slug": "4t",
+  "status": "active",
+  "tag": "4T",
+  "updated_at": "2026-11-23T15:48:13.312844+00:00"
+ },
+ {
+  "achievements": [],
+  "coach": null,
+  "created_at": "2026-11-23T15:43:06.629558+00:00",
+  "description": null,
+  "founded": "2026",
+  "id": "ba08dccf-0e29-4340-bd78-34d123847f21",
+  "links": {
+   "x": "https://x.com/ESP_Function"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/dbb10ab3-c4be-4cef-ab02-becbacb791fe.webp",
+  "manager": "Eclat",
+  "name": "FCN by YAMABUN",
+  "region": "日本",
+  "slug": "fcn",
+  "status": "active",
+  "tag": "FCN",
+  "updated_at": "2026-11-23T15:43:06.629558+00:00"
  },
  {
   "achievements": [],
@@ -256,6 +352,25 @@
   "status": "active",
   "tag": "VL",
   "updated_at": "2026-11-20T17:07:16.650124+00:00"
+ },
+ {
+  "achievements": [],
+  "coach": null,
+  "created_at": "2026-11-23T15:23:49.087018+00:00",
+  "description": null,
+  "founded": "2020",
+  "id": "eb821802-77a1-4049-a172-fa4a3280756c",
+  "links": {
+   "instagram": "https://www.instagram.com/rowesports.gg"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/0d39e6d8-99d6-4137-9fc2-89a5e0294e02.webp",
+  "manager": null,
+  "name": "RoW Esports",
+  "region": "ブラジル",
+  "slug": "row",
+  "status": "active",
+  "tag": "ROW",
+  "updated_at": "2026-11-23T15:23:49.087018+00:00"
  },
  {
   "achievements": [],
