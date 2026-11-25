@@ -631,7 +631,8 @@ def build_staff_list(db):
         f'<span class="st-count">記事 {len(staff_arts(db, r))}本</span></span></a>' for r in db.staff)
     body = (f'{crumb(("編集部", None))}<h1 class="pt">EDITORIAL TEAM</h1>'
             f'<p class="lead-p">DROPZONEの記事や大会・移籍データは、PUBG MOBILEのeスポーツが好きな有志の編集部が作っています。</p>'
-            f'{f"<div class=st-grid>{cards}</div>" if cards else "<p class=mut>準備中です。</p>"}')
+            f'{f"<div class=st-grid>{cards}</div>" if cards else "<p class=mut>準備中です。</p>"}'
+            f'<div class="card st-ops"><span class="st-pos">サイト開発 / 運営</span><span class="st-name">SENA STUDIO</span></div>')
     return page('/staff/', '編集部', body, desc='DROPZONEの記事やデータを作っている編集部メンバーの紹介。')
 
 

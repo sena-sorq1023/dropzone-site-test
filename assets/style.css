@@ -233,3 +233,5 @@ tr.up td{background:#EAF5EE}
 .st-name{font-size:19px;font-weight:900;line-height:1.35}
 .st-focus{font-size:13px;color:var(--sub)}
 .st-count{font-size:12px;color:var(--sub);margin-top:4px}
+
+.st-ops{margin-top:28px;padding:20px 24px;display:flex;flex-direction:column;gap:4px}
