@@ -633,8 +633,8 @@ def build_staff_list(db):
     body = (f'{crumb(("編集部", None))}<h1 class="pt">EDITORIAL TEAM</h1>'
             f'<p class="lead-p">DROPZONEの記事や大会・移籍データは、PUBG MOBILEのeスポーツが好きな有志の編集部が作っています。</p>'
             f'{f"<div class=st-grid>{cards}</div>" if cards else "<p class=mut>準備中です。</p>"}'
-            f'<section class="ops-sec">{h2("サイト開発 / 運営")}<div class="card ops"><img class="ops-logo" src="/assets/sena-logo-black.webp" alt="SENA STUDIO">'
-            f'<div class="ops-body"><span class="ops-name">SENA STUDIO</span><span class="ops-desc">DROPZONEのサイト開発・運営を担当しています。</span>'
+            f'<section class="ops-sec">{h2("制作 / 運用管理")}<div class="card ops"><img class="ops-logo" src="/assets/sena-logo-black.webp" alt="SENA STUDIO">'
+            f'<div class="ops-body"><span class="ops-name">SENA STUDIO</span><span class="ops-desc">eスポーツの総合プロダクション。CRUXやPMSBをはじめ、PUBG MOBILEを盛り上げる活動を行っています。<br>本サイト、DROPZONEではサイト制作と運用管理を担当しています。</span>'
             f'<div class="ops-links"><a class="ops-sns" href="https://x.com/SENASTUDIO_JP" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23 22h-6.8l-5.3-6.9L4.8 22H1.7l8.1-9.3L1 2h7l4.8 6.3zm-1.2 18h1.9L6.4 3.9H4.4z"/></svg>@SENASTUDIO_JP</a></div></div></div></section>')
     return page('/staff/', '編集部', body, desc='DROPZONEの記事やデータを作っている編集部メンバーの紹介。')
 
