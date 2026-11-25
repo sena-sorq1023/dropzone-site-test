@@ -9,6 +9,7 @@
   "description": null,
   "founded": "2021",
   "id": "1e6370e8-8ff8-4b28-b1dc-143e5760ef04",
+  "kana": null,
   "links": {
    "instagram": "https://www.instagram.com/s2gespor",
    "x": "https://x.com/s2gespor"
@@ -31,6 +32,7 @@
   "description": null,
   "founded": "2026",
   "id": "33308d41-1fff-44f6-b63c-5f34f0c1f298",
+  "kana": null,
   "links": {
    "instagram": "https://www.instagram.com/alulapubgm",
    "x": "https://x.com/AlUlaclub"
@@ -46,11 +48,32 @@
  },
  {
   "achievements": [],
+  "coach": null,
+  "created_at": "2026-11-25T08:42:16.907311+00:00",
+  "description": null,
+  "founded": "2025",
+  "id": "447aa3d0-f3ed-467e-942a-f4705fc1ce3b",
+  "kana": "めいきんぐ ざ ろーど",
+  "links": {
+   "x": "https://x.com/MTR_GAMING_ESP"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/8cc3213d-794b-4b6a-abeb-03df764b9dd5.webp",
+  "manager": "Choco",
+  "name": "MAKING THE ROAD",
+  "region": "日本",
+  "slug": "mtr",
+  "status": "active",
+  "tag": "MTR",
+  "updated_at": "2026-11-25T08:42:16.907311+00:00"
+ },
+ {
+  "achievements": [],
   "coach": "For1st",
   "created_at": "2026-11-20T17:12:39.250857+00:00",
   "description": null,
   "founded": "2025",
   "id": "49178ae0-65ea-407b-9d95-84604faa6fb9",
+  "kana": null,
   "links": {
    "instagram": "https://www.instagram.com/ulfesports",
    "youtube": "https://www.youtube.com/@ulfesports/videos"
@@ -74,6 +97,7 @@
   "description": null,
   "founded": "2020",
   "id": "590ed617-b6bf-495f-9fa4-8dbe7dc679e3",
+  "kana": null,
   "links": {
    "instagram": "https://www.instagram.com/alpha7gg",
    "x": "https://x.com/Alpha7_esports"
@@ -94,6 +118,7 @@
   "description": null,
   "founded": "2019",
   "id": "7b16ce14-089d-432f-9e74-468a4ea05728",
+  "kana": null,
   "links": {
    "instagram": "https://www.instagram.com/sharperesports_official/",
    "tiktok": "https://www.instagram.com/sharperesports_official/",
@@ -115,6 +140,7 @@
   "description": null,
   "founded": "2022",
   "id": "7bbd4cba-a07b-43df-afcf-af524bbb87ff",
+  "kana": null,
   "links": {
    "instagram": "https://www.instagram.com/teamgoat_pubgm"
   },
@@ -136,6 +162,7 @@
   "description": null,
   "founded": "2022",
   "id": "815989b8-1c04-421c-b3af-1eab89003904",
+  "kana": null,
   "links": {
    "instagram": "https://www.instagram.com/wolvesesports",
    "x": "https://x.com/WolvesEsports"
@@ -156,6 +183,7 @@
   "description": null,
   "founded": "2025",
   "id": "8d191dc4-f452-4bbc-a730-cb6f9736d998",
+  "kana": null,
   "links": {
    "instagram": "https://www.instagram.com/earenaesports",
    "website": "https://earena.com/en",
@@ -177,6 +205,7 @@
   "description": null,
   "founded": "2025",
   "id": "994456e5-3566-4248-a908-b92bb31e1c75",
+  "kana": null,
   "links": {
    "instagram": "https://www.instagram.com/xforce.rjc"
   },
@@ -196,6 +225,7 @@
   "description": null,
   "founded": "2020",
   "id": "9dc8371c-5996-474a-a077-34b1ba964225",
+  "kana": null,
   "links": {
    "instagram": "https://www.instagram.com/4kesportss"
   },
@@ -215,6 +245,7 @@
   "description": null,
   "founded": "2025",
   "id": "addbed54-cee8-433f-bb60-c89adea1c582",
+  "kana": null,
   "links": {
    "instagram": "https://www.instagram.com/reignite_ent",
    "x": "https://x.com/ReigniteJP",
@@ -239,6 +270,7 @@
   "description": null,
   "founded": "2026",
   "id": "aee82507-3eba-4575-9745-da493b4bc21d",
+  "kana": null,
   "links": {
    "instagram": "https://www.instagram.com/auroragg.mobile",
    "website": "https://auroragg.com/en",
@@ -260,6 +292,7 @@
   "description": null,
   "founded": "2024",
   "id": "b606f6fc-9a0a-4e9c-8ca2-58e5d916ac4f",
+  "kana": null,
   "links": {
    "instagram": "https://www.instagram.com/4thrives",
    "x": "https://x.com/4thrives"
@@ -280,6 +313,7 @@
   "description": null,
   "founded": "2026",
   "id": "ba08dccf-0e29-4340-bd78-34d123847f21",
+  "kana": null,
   "links": {
    "x": "https://x.com/ESP_Function"
   },
@@ -299,6 +333,7 @@
   "description": null,
   "founded": "2024",
   "id": "d03b055f-aa1a-498a-9b63-1bbeb9eba3d8",
+  "kana": null,
   "links": {
    "instagram": "https://www.instagram.com/furiagg",
    "x": "https://x.com/furia",
@@ -320,6 +355,7 @@
   "description": null,
   "founded": "2022",
   "id": "da3ac03d-bd36-4269-9f55-9a8a8f673a92",
+  "kana": null,
   "links": {
    "instagram": "https://www.instagram.com/nsr_esports_",
    "website": "https://www.ns-esports.com/",
@@ -341,6 +377,7 @@
   "description": null,
   "founded": "2026",
   "id": "db088e6d-d0e9-4fee-b200-cdd61f57879a",
+  "kana": null,
   "links": {
    "x": "https://x.com/_VARREL"
   },
@@ -360,6 +397,7 @@
   "description": null,
   "founded": "2020",
   "id": "eb821802-77a1-4049-a172-fa4a3280756c",
+  "kana": null,
   "links": {
    "instagram": "https://www.instagram.com/rowesports.gg"
   },
@@ -379,6 +417,7 @@
   "description": null,
   "founded": "2026",
   "id": "f22e3816-4fe2-48a3-b3cf-0954c02dd72e",
+  "kana": null,
   "links": {
    "instagram": "https://www.instagram.com/akgoldesports"
   },
@@ -401,6 +440,7 @@
   "description": null,
   "founded": "2025",
   "id": "fb8d0200-9a4e-470b-8ac7-8b5822a2b474",
+  "kana": null,
   "links": {
    "instagram": "https://www.instagram.com/mongolz.pubgm/"
   },
@@ -422,6 +462,7 @@
   "description": null,
   "founded": null,
   "id": "feaa6e70-c426-4a98-90dc-6bd03c786820",
+  "kana": null,
   "links": {
    "website": "https://weibo.com/u/6637426679"
   },

@@ -1,6 +1,54 @@
 [
  {
   "active": true,
+  "bio": "ごみ",
+  "created_at": "2026-11-25T06:55:37.841261+00:00",
+  "focus": null,
+  "id": "07a8fc66-d116-4b7e-a98f-155cbea89d68",
+  "links": {
+   "x": "https://x.com/KOJOPO5"
+  },
+  "name": "すずもり",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/staff/2026-11/39ac5300-5b01-4931-a804-c00b8074e789.webp",
+  "position": "ライター",
+  "slug": "suzumori",
+  "sort_order": 2,
+  "updated_at": "2026-11-25T08:38:26.107749+00:00"
+ },
+ {
+  "active": true,
+  "bio": null,
+  "created_at": "2026-11-25T07:00:46.935364+00:00",
+  "focus": null,
+  "id": "2f286fe0-781f-4716-a442-b78b4dcc6d57",
+  "links": {
+   "x": "https://x.com/SoRqJP"
+  },
+  "name": "SoRq",
+  "photo_url": null,
+  "position": "システム開発",
+  "slug": "sorq",
+  "sort_order": 4,
+  "updated_at": "2026-11-25T07:00:46.935364+00:00"
+ },
+ {
+  "active": true,
+  "bio": null,
+  "created_at": "2026-11-25T06:56:20.54367+00:00",
+  "focus": null,
+  "id": "639f653f-d501-4286-bfc4-0525e7a7411e",
+  "links": {
+   "x": "https://x.com/Seagull0302"
+  },
+  "name": "Seagull",
+  "photo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/staff/2026-11/dc0a2464-dc07-4fe3-91f1-bcc7525f143d.webp",
+  "position": "ライター",
+  "slug": "seagull",
+  "sort_order": 3,
+  "updated_at": "2026-11-25T06:56:20.54367+00:00"
+ },
+ {
+  "active": true,
   "bio": "DROPZONEの前身であるPUBG MOBILE ESPORTS NEWSの立ち上げ人。\n現在はMAPLE ARMYでディレクターを務め、日本コミュニティの発展を目指す。",
   "created_at": "2026-11-11T22:11:14.235295+00:00",
   "focus": null,
