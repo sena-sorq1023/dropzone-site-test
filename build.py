@@ -23,6 +23,7 @@ from pathlib import Path
 URL = os.environ.get('SUPABASE_URL', '').rstrip('/')
 KEY = os.environ.get('SUPABASE_KEY', '')
 SITE = os.environ.get('SITE_URL', 'https://dropzone-news.jp').rstrip('/')
+CSS_V = __import__('hashlib').md5((Path(__file__).resolve().parent / 'assets' / 'style.css').read_bytes()).hexdigest()[:8]
 NOINDEX = os.environ.get('SITE_NOINDEX') == '1'
 # 仮公開中の簡易ログイン。SITE_GATE に「ID:パスワード」のSHA-256（16進）を入れると有効。空なら無効。
 GATE = os.environ.get('SITE_GATE', '').strip().lower()
@@ -314,7 +315,7 @@ def page(path, title, body, *, desc='', on='', og_image='', ticker=''):
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@500;600;700&family=IBM+Plex+Mono:wght@500&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css?v={CSS_V}">
 </head>
 <body>
 <a class="skip" href="#main">本文へスキップ</a>
@@ -632,7 +633,9 @@ def build_staff_list(db):
     body = (f'{crumb(("編集部", None))}<h1 class="pt">EDITORIAL TEAM</h1>'
             f'<p class="lead-p">DROPZONEの記事や大会・移籍データは、PUBG MOBILEのeスポーツが好きな有志の編集部が作っています。</p>'
             f'{f"<div class=st-grid>{cards}</div>" if cards else "<p class=mut>準備中です。</p>"}'
-            f'<div class="card st-ops"><span class="st-pos">サイト開発 / 運営</span><span class="st-name">SENA STUDIO</span></div>')
+            f'<section class="ops-sec">{h2("サイト開発 / 運営")}<div class="card ops"><img class="ops-logo" src="/assets/sena-logo-black.webp" alt="SENA STUDIO">'
+            f'<div class="ops-body"><span class="ops-name">SENA STUDIO</span><span class="ops-desc">DROPZONEのサイト開発・運営を担当しています。</span>'
+            f'<div class="ops-links"><a class="ops-sns" href="https://x.com/SENASTUDIO_JP" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23 22h-6.8l-5.3-6.9L4.8 22H1.7l8.1-9.3L1 2h7l4.8 6.3zm-1.2 18h1.9L6.4 3.9H4.4z"/></svg>@SENASTUDIO_JP</a></div></div></div></section>')
     return page('/staff/', '編集部', body, desc='DROPZONEの記事やデータを作っている編集部メンバーの紹介。')
 
 
