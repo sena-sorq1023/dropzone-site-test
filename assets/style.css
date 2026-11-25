@@ -126,6 +126,7 @@ tr.up td{background:#EAF5EE}
 .phead{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
 .phead h1{margin:4px 0 0;font-size:clamp(28px,4vw,44px);line-height:1.2;font-weight:900}
 .phead p{margin:4px 0 0}
+.phead .kana{margin:2px 0 0;font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--sub)}
 .t-logo{width:96px;height:96px;object-fit:contain;background:var(--ink);border-radius:6px;padding:8px}
 .t-logo.ph{display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--cond);font-weight:800;font-size:28px}
 .t-logo.round{border-radius:50%;object-fit:cover;padding:0}

@@ -677,7 +677,7 @@ def build_team(db, t):
         ('地域', e(t.get('region'))), ('タグ', e(t.get('tag'))), ('設立', e(t.get('founded'))), ('マネージャー', e(t.get('manager'))), ('コーチ', e(t.get('coach'))),
         ('主な実績', '<br>'.join(e(a) for a in ach)), ('リンク', links_html(t.get('links'))),
     ])
-    body = (f'{crumb(("チーム", "/teams/"), (t["name"], None))}<div class="phead">{logo}<div><div class="meta"><span>{e(t.get("region"))}</span>{f"<span class=chip>{e(t['tag'])}</span>" if t.get("tag") else ""}<span class="st st-{t.get("status")}">{TEAMST.get(t.get("status"), "")}</span></div><h1>{e(t["name"])}</h1></div></div>'
+    body = (f'{crumb(("チーム", "/teams/"), (t["name"], None))}<div class="phead">{logo}<div><div class="meta"><span>{e(t.get("region"))}</span>{f"<span class=chip>{e(t['tag'])}</span>" if t.get("tag") else ""}<span class="st st-{t.get("status")}">{TEAMST.get(t.get("status"), "")}</span></div><h1>{e(t["name"])}</h1>{f'<p class="kana">{e(t["kana"])}</p>' if t.get("kana") else ""}</div></div>'
             f'<div class="two"><div class="col-main">'
             f'{f"<section>{h2('概要')}<div class='card pad'><p class=pre>{e(t['description'])}</p></div></section>" if t.get("description") else ""}'
             f'<section>{h2("ロスター")}{roster_html}</section><section>{h2("大会成績")}{res_table}</section>'
@@ -748,7 +748,7 @@ def build_player(db, p):
         ('IGN', e(p.get('full_ign') or p['ign'])), ('所属', db.team_link(cur) if cur else 'フリー'), ('ロール', e(p.get('role'))),
         ('国籍', e(p.get('nationality'))), ('本名', e(p.get('real_name'))), ('リンク', links_html(p.get('links'))),
     ])
-    body = (f'{crumb(("選手", "/players/"), (p["ign"], None))}<div class="phead">{photo}<div><div class="meta">{db.team_link(cur) if cur else "<span class=mut>フリー</span>"}</div><h1>{e(p["ign"])}</h1></div></div>'
+    body = (f'{crumb(("選手", "/players/"), (p["ign"], None))}<div class="phead">{photo}<div><div class="meta">{db.team_link(cur) if cur else "<span class=mut>フリー</span>"}</div><h1>{e(p["ign"])}</h1>{f'<p class="kana">{e(p["kana"])}</p>' if p.get("kana") else ""}</div></div>'
             f'<div class="two"><div class="col-main">{summary}'
             f'{f"<section>{h2('紹介')}<div class='card pad'><p class=pre>{e(p['bio'])}</p></div></section>" if p.get("bio") else ""}'
             f'{f"<section>{h2('マップ別 平均キル')}{maps_html}</section>" if maps_html else ""}'
@@ -774,9 +774,9 @@ def build_search(db):
 def search_index(db):
     idx = []
     for t in db.teams:
-        idx.append({'t': 'チーム', 'n': t['name'], 'k': f'{t["name"]} {t.get("tag") or ""}', 'u': f'/teams/{t["slug"]}/'})
+        idx.append({'t': 'チーム', 'n': t['name'], 'k': f'{t["name"]} {t.get("tag") or ""} {t.get("kana") or ""}', 'u': f'/teams/{t["slug"]}/'})
     for p in db.players:
-        idx.append({'t': '選手', 'n': p['ign'], 'k': f'{p["ign"]} {p.get("full_ign") or ""} {db.team_name(db.cur_team.get(p["id"]))}', 'u': f'/players/{p["slug"]}/'})
+        idx.append({'t': '選手', 'n': p['ign'], 'k': f'{p["ign"]} {p.get("full_ign") or ""} {p.get("kana") or ""} {db.team_name(db.cur_team.get(p["id"]))}', 'u': f'/players/{p["slug"]}/'})
     for t in db.tours:
         idx.append({'t': '大会', 'n': t['name'], 'k': f'{t["name"]} {t.get("short_name") or ""} {t.get("series") or ""}', 'u': f'/tournaments/{t["slug"]}/'})
     for a in db.articles[:500]:
