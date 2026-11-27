@@ -24,6 +24,26 @@
   "updated_at": "2026-11-21T18:19:05.225162+00:00"
  },
  {
+  "achievements": [],
+  "coach": null,
+  "created_at": "2026-11-27T15:07:12.680482+00:00",
+  "description": null,
+  "founded": "2021",
+  "id": "20e6f1bc-0f1b-49b3-98de-18e629ee50e1",
+  "kana": "アイクルド イースポーツ",
+  "links": {
+   "instagram": "https://www.instagram.com/ikurdesports"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/3074a7eb-d298-4acf-9852-e4b1527a1571.webp",
+  "manager": null,
+  "name": "iKURD ESPORTS",
+  "region": "イラク",
+  "slug": "ikurd-esports",
+  "status": "active",
+  "tag": "iKURD",
+  "updated_at": "2026-11-27T15:07:23.506937+00:00"
+ },
+ {
   "achievements": [
    "PUBG Mobile Global Open 2026 Season 1 MENA Finals - 優勝"
   ],
@@ -309,6 +329,26 @@
  {
   "achievements": [],
   "coach": null,
+  "created_at": "2026-11-27T16:20:16.243621+00:00",
+  "description": null,
+  "founded": "2026",
+  "id": "b68a9c51-3af5-4081-a311-89e783df351b",
+  "kana": "ビーアールエックス エムスーエム イースポーツ",
+  "links": {
+   "instagram": "https://www.instagram.com/brxesportsgg"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/d55e50cc-0df9-4b54-936d-2ee3d58177d7.webp",
+  "manager": null,
+  "name": "BRX MSM Esports",
+  "region": "トルコ",
+  "slug": "brx",
+  "status": "active",
+  "tag": "BRX",
+  "updated_at": "2026-11-27T16:20:16.243621+00:00"
+ },
+ {
+  "achievements": [],
+  "coach": null,
   "created_at": "2026-11-23T15:43:06.629558+00:00",
   "description": null,
   "founded": "2026",
@@ -325,6 +365,87 @@
   "status": "active",
   "tag": "FCN",
   "updated_at": "2026-11-23T15:43:06.629558+00:00"
+ },
+ {
+  "achievements": [],
+  "coach": null,
+  "created_at": "2026-11-27T15:40:58.532614+00:00",
+  "description": null,
+  "founded": "2023",
+  "id": "c0067fb8-371f-4cb5-8b17-9ddd3cc5b19c",
+  "kana": "チーム フラッシュ",
+  "links": {
+   "instagram": "https://www.instagram.com/teamflashvn.pubgm",
+   "website": "https://teamflash.gg/"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/200d3723-f6e5-43ec-8108-9df9f1a7c4d5.webp",
+  "manager": null,
+  "name": "Team Flash",
+  "region": "ベトナム",
+  "slug": "fl",
+  "status": "active",
+  "tag": "FL",
+  "updated_at": "2026-11-27T15:40:58.532614+00:00"
+ },
+ {
+  "achievements": [],
+  "coach": "Peco",
+  "created_at": "2026-11-27T15:37:24.707058+00:00",
+  "description": null,
+  "founded": "2021",
+  "id": "c0511bd8-34e0-4ca3-aaa5-44fdd0c90068",
+  "kana": "ニグマ ギャラクシー",
+  "links": {
+   "instagram": "https://www.instagram.com/teamnigma"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/b56caaf6-0679-42f3-9f9a-00f460529d61.webp",
+  "manager": null,
+  "name": "Nigma Galaxy",
+  "region": "アラブ首長国連邦",
+  "slug": "ngx",
+  "status": "active",
+  "tag": "NGX",
+  "updated_at": "2026-11-27T15:37:24.707058+00:00"
+ },
+ {
+  "achievements": [],
+  "coach": null,
+  "created_at": "2026-11-27T15:13:11.073171+00:00",
+  "description": null,
+  "founded": "2026",
+  "id": "c7013196-7d28-42eb-848a-24a5344b7118",
+  "kana": "ゲーミング スターズ イースポーツ",
+  "links": {
+   "instagram": "https://www.instagram.com/gamingstarsgg"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/2693417f-9b04-4601-89df-9392d31c6596.webp",
+  "manager": null,
+  "name": "Gaming Stars Esports",
+  "region": "トルコ",
+  "slug": "gstr",
+  "status": "active",
+  "tag": "GSTR",
+  "updated_at": "2026-11-27T15:13:11.073171+00:00"
+ },
+ {
+  "achievements": [],
+  "coach": "加多宝",
+  "created_at": "2026-11-27T15:04:44.963437+00:00",
+  "description": null,
+  "founded": "2020",
+  "id": "c752dac9-9e01-43ea-bb88-d4700fabe776",
+  "kana": "エルジーディー ゲーミング",
+  "links": {
+   "x": "https://x.com/LGDgaming"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/f855982c-9b12-49cb-befd-d3ab9638608f.webp",
+  "manager": null,
+  "name": "LGD Gaming",
+  "region": "中国",
+  "slug": "lgd",
+  "status": "active",
+  "tag": "LGD",
+  "updated_at": "2026-11-27T15:04:44.963437+00:00"
  },
  {
   "achievements": [],
@@ -412,6 +533,26 @@
  },
  {
   "achievements": [],
+  "coach": null,
+  "created_at": "2026-11-27T15:16:54.150852+00:00",
+  "description": null,
+  "founded": "2026",
+  "id": "ef5c201f-3c52-4519-9e7e-d5babeb6887f",
+  "kana": "ハストラー クルー",
+  "links": {
+   "instagram": "https://www.instagram.com/hustlercrewofficial/"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/08d7f6dd-f855-4ed0-a24a-057a749a9a41.webp",
+  "manager": null,
+  "name": "Hustler Crew",
+  "region": "イギリス",
+  "slug": "hc",
+  "status": "active",
+  "tag": "HC",
+  "updated_at": "2026-11-27T15:16:54.150852+00:00"
+ },
+ {
+  "achievements": [],
   "coach": "HidanS",
   "created_at": "2026-11-21T14:29:32.002204+00:00",
   "description": null,
@@ -429,6 +570,28 @@
   "status": "active",
   "tag": "AKG",
   "updated_at": "2026-11-21T14:29:32.002204+00:00"
+ },
+ {
+  "achievements": [],
+  "coach": "Ayogi",
+  "created_at": "2026-11-27T15:19:51.842747+00:00",
+  "description": null,
+  "founded": "2018",
+  "id": "f4ee4953-65a8-459c-b47f-8704788360b7",
+  "kana": "チーム ソウル",
+  "links": {
+   "instagram": "https://www.instagram.com/soulesportsofficial",
+   "x": "https://x.com/Soul_esportsgg",
+   "youtube": "https://www.youtube.com/@S8ULGG"
+  },
+  "logo_url": "https://dvwwldoorumzdibygdnh.supabase.co/storage/v1/object/public/media/teams/2026-11/ead2907e-388b-4c86-ad65-ab464d6dbaf3.webp",
+  "manager": null,
+  "name": "Team SouL",
+  "region": "インド",
+  "slug": "soul",
+  "status": "active",
+  "tag": "SOUL",
+  "updated_at": "2026-11-27T15:19:51.842747+00:00"
  },
  {
   "achievements": [
